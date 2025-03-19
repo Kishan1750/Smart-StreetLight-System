@@ -1,0 +1,1451 @@
+<!doctype html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="img/charusat.jpg" />
+	<link rel="icon" type="image/png" href="img/charusat.png" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<script
+		type="text/javascript">(window.NREUM || (NREUM = {})).init = { ajax: { deny_list: ["bam.nr-data.net"] } }; (window.NREUM || (NREUM = {})).loader_config = { licenseKey: "e0e9d47b89", applicationID: "776036015" };; (() => { var e, t, r = { 9071: (e, t, r) => { "use strict"; r.d(t, { I: () => n }); var n = 0, i = navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/); i && (n = +i[1]) }, 6562: (e, t, r) => { "use strict"; r.d(t, { P_: () => v, Mt: () => h, C5: () => d, DL: () => y, OP: () => R, lF: () => L, Yu: () => A, Dg: () => p, CX: () => f, GE: () => w, sU: () => M }); var n = {}; r.r(n), r.d(n, { agent: () => x, match: () => O, version: () => T }); var i = r(6797), o = r(909), a = r(8610); class s { constructor(e, t) { try { if (!e || "object" != typeof e) return (0, a.Z)("New setting a Configurable requires an object as input"); if (!t || "object" != typeof t) return (0, a.Z)("Setting a Configurable requires a model to set its initial properties"); Object.assign(this, t), Object.entries(e).forEach((e => { let [t, r] = e; const n = (0, o.q)(t); n.length && r && "object" == typeof r && n.forEach((e => { e in r && ((0, a.Z)('"'.concat(e, '" is a protected attribute and can not be changed in feature ').concat(t, ".  It will have no effect.")), delete r[e]) })), this[t] = r })) } catch (e) { (0, a.Z)("An error occured while setting a Configurable", e) } } } const c = { beacon: i.ce.beacon, errorBeacon: i.ce.errorBeacon, licenseKey: void 0, applicationID: void 0, sa: void 0, queueTime: void 0, applicationTime: void 0, ttGuid: void 0, user: void 0, account: void 0, product: void 0, extra: void 0, jsAttributes: {}, userAttributes: void 0, atts: void 0, transactionName: void 0, tNamePlain: void 0 }, u = {}; function d(e) { if (!e) throw new Error("All info objects require an agent identifier!"); if (!u[e]) throw new Error("Info for ".concat(e, " was never set")); return u[e] } function f(e, t) { if (!e) throw new Error("All info objects require an agent identifier!"); u[e] = new s(t, c), (0, i.Qy)(e, u[e], "info") } const l = { allow_bfcache: !0, privacy: { cookies_enabled: !0 }, ajax: { deny_list: void 0, enabled: !0, harvestTimeSeconds: 10 }, distributed_tracing: { enabled: void 0, exclude_newrelic_header: void 0, cors_use_newrelic_header: void 0, cors_use_tracecontext_headers: void 0, allowed_origins: void 0 }, ssl: void 0, obfuscate: void 0, jserrors: { enabled: !0, harvestTimeSeconds: 10 }, metrics: { enabled: !0 }, page_action: { enabled: !0, harvestTimeSeconds: 30 }, page_view_event: { enabled: !0 }, page_view_timing: { enabled: !0, harvestTimeSeconds: 30, long_task: !1 }, session_trace: { enabled: !0, harvestTimeSeconds: 10 }, spa: { enabled: !0, harvestTimeSeconds: 10 } }, g = {}; function v(e) { if (!e) throw new Error("All configuration objects require an agent identifier!"); if (!g[e]) throw new Error("Configuration for ".concat(e, " was never set")); return g[e] } function p(e, t) { if (!e) throw new Error("All configuration objects require an agent identifier!"); g[e] = new s(t, l), (0, i.Qy)(e, g[e], "config") } function h(e, t) { if (!e) throw new Error("All configuration objects require an agent identifier!"); var r = v(e); if (r) { for (var n = t.split("."), i = 0; i < n.length - 1; i++)if ("object" != typeof (r = r[n[i]])) return; r = r[n[n.length - 1]] } return r } const m = { accountID: void 0, trustKey: void 0, agentID: void 0, licenseKey: void 0, applicationID: void 0, xpid: void 0 }, b = {}; function y(e) { if (!e) throw new Error("All loader-config objects require an agent identifier!"); if (!b[e]) throw new Error("LoaderConfig for ".concat(e, " was never set")); return b[e] } function w(e, t) { if (!e) throw new Error("All loader-config objects require an agent identifier!"); b[e] = new s(t, m), (0, i.Qy)(e, b[e], "loader_config") } const A = (0, i.mF)().o; var E = r(2053), x = null, T = null; if (navigator.userAgent) { var _ = navigator.userAgent, D = _.match(/Version\/(\S+)\s+Safari/); D && -1 === _.indexOf("Chrome") && -1 === _.indexOf("Chromium") && (x = "Safari", T = D[1]) } function O(e, t) { if (!x) return !1; if (e !== x) return !1; if (!t) return !0; if (!T) return !1; for (var r = T.split("."), n = t.split("."), i = 0; i < n.length; i++)if (n[i] !== r[i]) return !1; return !0 } var j = r(5526), k = r(2374); const P = "NRBA_SESSION_ID"; function S() { if (!k.il) return null; try { let e; return null === (e = window.sessionStorage.getItem(P)) && (e = (0, j.ky)(16), window.sessionStorage.setItem(P, e)), e } catch (e) { return null } } var I = r(8226); const C = e => ({ customTransaction: void 0, disabled: !1, isolatedBacklog: !1, loaderType: void 0, maxBytes: 3e4, offset: (0, E.yf)(), onerror: void 0, origin: "" + k._A.location, ptid: void 0, releaseIds: {}, sessionId: 1 == h(e, "privacy.cookies_enabled") ? S() : null, xhrWrappable: "function" == typeof k._A.XMLHttpRequest?.prototype?.addEventListener, userAgent: n, version: I.q }), N = {}; function R(e) { if (!e) throw new Error("All runtime objects require an agent identifier!"); if (!N[e]) throw new Error("Runtime for ".concat(e, " was never set")); return N[e] } function M(e, t) { if (!e) throw new Error("All runtime objects require an agent identifier!"); N[e] = new s(t, C(e)), (0, i.Qy)(e, N[e], "runtime") } function L(e) { return function (e) { try { const t = d(e); return !!t.licenseKey && !!t.errorBeacon && !!t.applicationID } catch (e) { return !1 } }(e) } }, 8226: (e, t, r) => { "use strict"; r.d(t, { q: () => n }); const n = "1227.PROD" }, 9557: (e, t, r) => { "use strict"; r.d(t, { w: () => o }); var n = r(8610); const i = { agentIdentifier: "" }; class o { constructor(e) { try { if ("object" != typeof e) return (0, n.Z)("shared context requires an object as input"); this.sharedContext = {}, Object.assign(this.sharedContext, i), Object.entries(e).forEach((e => { let [t, r] = e; Object.keys(i).includes(t) && (this.sharedContext[t] = r) })) } catch (e) { (0, n.Z)("An error occured while setting SharedContext", e) } } } }, 4329: (e, t, r) => { "use strict"; r.d(t, { L: () => d, R: () => c }); var n = r(3752), i = r(7022), o = r(4045), a = r(2325); const s = {}; function c(e, t) { const r = { staged: !1, priority: a.p[t] || 0 }; u(e), s[e].get(t) || s[e].set(t, r) } function u(e) { e && (s[e] || (s[e] = new Map)) } function d() { let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "", t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "feature"; if (u(e), !e || !s[e].get(t)) return a(t); s[e].get(t).staged = !0; const r = Array.from(s[e]); function a(t) { const r = e ? n.ee.get(e) : n.ee, a = o.X.handlers; if (r.backlog && a) { var s = r.backlog[t], c = a[t]; if (c) { for (var u = 0; s && u < s.length; ++u)f(s[u], c); (0, i.D)(c, (function (e, t) { (0, i.D)(t, (function (t, r) { r[0].on(e, r[1]) })) })) } delete a[t], r.backlog[t] = null, r.emit("drain-" + t, []) } } r.every((e => { let [t, r] = e; return r.staged })) && (r.sort(((e, t) => e[1].priority - t[1].priority)), r.forEach((e => { let [t] = e; a(t) }))) } function f(e, t) { var r = e[1]; (0, i.D)(t[r], (function (t, r) { var n = e[0]; if (r[0] === n) { var i = r[1], o = e[3], a = e[2]; i.apply(o, a) } })) } }, 3752: (e, t, r) => { "use strict"; r.d(t, { ee: () => u }); var n = r(6797), i = r(3916), o = r(7022), a = r(6562), s = "nr@context"; let c = (0, n.fP)(); var u; function d() { } function f() { return new d } function l() { u.aborted = !0, u.backlog = {} } c.ee ? u = c.ee : (u = function e(t, r) { var n = {}, c = {}, g = {}, v = !1; try { v = 16 === r.length && (0, a.OP)(r).isolatedBacklog } catch (e) { } var p = { on: b, addEventListener: b, removeEventListener: y, emit: m, get: A, listeners: w, context: h, buffer: E, abort: l, aborted: !1, isBuffering: x, debugId: r, backlog: v ? {} : t && "object" == typeof t.backlog ? t.backlog : {} }; return p; function h(e) { return e && e instanceof d ? e : e ? (0, i.X)(e, s, f) : f() } function m(e, r, n, i, o) { if (!1 !== o && (o = !0), !u.aborted || i) { t && o && t.emit(e, r, n); for (var a = h(n), s = w(e), d = s.length, f = 0; f < d; f++)s[f].apply(a, r); var l = T()[c[e]]; return l && l.push([p, e, r, a]), a } } function b(e, t) { n[e] = w(e).concat(t) } function y(e, t) { var r = n[e]; if (r) for (var i = 0; i < r.length; i++)r[i] === t && r.splice(i, 1) } function w(e) { return n[e] || [] } function A(t) { return g[t] = g[t] || e(p, t) } function E(e, t) { var r = T(); p.aborted || (0, o.D)(e, (function (e, n) { t = t || "feature", c[n] = t, t in r || (r[t] = []) })) } function x(e) { return !!T()[c[e]] } function T() { return p.backlog } }(void 0, "globalEE"), c.ee = u) }, 9252: (e, t, r) => { "use strict"; r.d(t, { E: () => n, p: () => i }); var n = r(3752).ee.get("handle"); function i(e, t, r, i, o) { o ? (o.buffer([e], i), o.emit(e, t, r)) : (n.buffer([e], i), n.emit(e, t, r)) } }, 4045: (e, t, r) => { "use strict"; r.d(t, { X: () => o }); var n = r(9252); o.on = a; var i = o.handlers = {}; function o(e, t, r, o) { a(o || n.E, i, e, t, r) } function a(e, t, r, i, o) { o || (o = "feature"), e || (e = n.E); var a = t[o] = t[o] || {}; (a[r] = a[r] || []).push([e, i]) } }, 8544: (e, t, r) => { "use strict"; r.d(t, { bP: () => s, iz: () => c, m$: () => a }); var n = r(2374); let i = !1, o = !1; try { const e = { get passive() { return i = !0, !1 }, get signal() { return o = !0, !1 } }; n._A.addEventListener("test", null, e), n._A.removeEventListener("test", null, e) } catch (e) { } function a(e, t) { return i || o ? { capture: !!e, passive: i, signal: t } : !!e } function s(e, t) { let r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2]; window.addEventListener(e, t, a(r)) } function c(e, t) { let r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2]; document.addEventListener(e, t, a(r)) } }, 5526: (e, t, r) => { "use strict"; r.d(t, { Rl: () => i, ky: () => o }); var n = r(2374); function i() { var e = null, t = 0, r = n._A?.crypto || n._A?.msCrypto; function i() { return e ? 15 & e[t++] : 16 * Math.random() | 0 } r && r.getRandomValues && (e = r.getRandomValues(new Uint8Array(31))); for (var o, a = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx", s = "", c = 0; c < a.length; c++)s += "x" === (o = a[c]) ? i().toString(16) : "y" === o ? (o = 3 & i() | 8).toString(16) : o; return s } function o(e) { var t = null, r = 0, n = self.crypto || self.msCrypto; n && n.getRandomValues && Uint8Array && (t = n.getRandomValues(new Uint8Array(31))); for (var i = [], o = 0; o < e; o++)i.push(a().toString(16)); return i.join(""); function a() { return t ? 15 & t[r++] : 16 * Math.random() | 0 } } }, 2053: (e, t, r) => { "use strict"; r.d(t, { nb: () => s, os: () => c, yf: () => a, zO: () => o }); var n = (new Date).getTime(), i = n; function o() { return performance?.now ? Math.round(performance.now()) : (n = Math.max((new Date).getTime(), n)) - i } function a() { return n } function s(e) { i = e } function c() { return i } }, 6625: (e, t, r) => { "use strict"; r.d(t, { s: () => a, v: () => s }); var n = r(8283), i = r(2053), o = r(2374); let a = !0; function s(e) { var t = function () { a = !1; const e = o._A?.performance?.timeOrigin || o._A?.performance?.timing?.navigationStart; if (!e) return; return Math.round(e) }(); t && ((0, n.B)(e, "starttime", t), (0, i.nb)(t)) } }, 8283: (e, t, r) => { "use strict"; r.d(t, { B: () => o, L: () => a }); var n = r(2053), i = {}; function o(e, t, r) { void 0 === r && (r = (0, n.zO)() + (0, n.os)()), i[e] = i[e] || {}, i[e][t] = r } function a(e, t, r, n) { const o = e.sharedContext.agentIdentifier; var a = i[o]?.[r], s = i[o]?.[n]; void 0 !== a && void 0 !== s && e.store("measures", t, { value: s - a }) } }, 2545: (e, t, r) => { "use strict"; r.d(t, { L: () => c }); var n = r(9071), i = r(8544), o = r(8305), a = r(2374), s = r(6998); if (a.v6) { a._A.cleanupTasks = []; const e = a._A.close; a._A.close = () => { for (let e of a._A.cleanupTasks) e(); e() } } function c(e, t) { if (a.il) if (t) (0, s.N)(e, !0), (0, i.bP)("pagehide", e); else { var r = (0, o.Z)(e); !n.I || navigator.sendBeacon ? (0, i.bP)("pagehide", r) : (0, i.bP)("beforeunload", r), (0, i.bP)("unload", r) } else a.v6 && a._A.cleanupTasks.push(e) } }, 8610: (e, t, r) => { "use strict"; function n(e, t) { console && console.warn && "function" == typeof console.warn && (console.warn("New Relic: ".concat(e)), t && console.warn(t)) } r.d(t, { Z: () => n }) }, 3916: (e, t, r) => { "use strict"; r.d(t, { X: () => i }); var n = Object.prototype.hasOwnProperty; function i(e, t, r) { if (n.call(e, t)) return e[t]; var i = r(); if (Object.defineProperty && Object.keys) try { return Object.defineProperty(e, t, { value: i, writable: !0, enumerable: !1 }), i } catch (e) { } return e[t] = i, i } }, 2374: (e, t, r) => { "use strict"; r.d(t, { _A: () => o, il: () => n, lW: () => a, v6: () => i }); const n = Boolean("undefined" != typeof window && window.document), i = Boolean("undefined" != typeof WorkerGlobalScope && self.navigator instanceof WorkerNavigator); let o = (() => { if (n) return window; if (i) { if ("undefined" != typeof globalThis && globalThis instanceof WorkerGlobalScope) return globalThis; if (self instanceof WorkerGlobalScope) return self } throw new Error('New Relic browser agent shutting down due to error: Unable to locate global scope. This is possibly due to code redefining browser global variables like "self" and "window".') })(); function a() { return o } }, 7022: (e, t, r) => { "use strict"; r.d(t, { D: () => i }); var n = Object.prototype.hasOwnProperty; function i(e, t) { var r = [], i = "", o = 0; for (i in e) n.call(e, i) && (r[o] = t(i, e[i]), o += 1); return r } }, 8305: (e, t, r) => { "use strict"; r.d(t, { Z: () => o }); var n = r(8683), i = r.n(n); function o(e) { var t, r = !1; return function () { return r ? t : (r = !0, t = e.apply(this, i()(arguments))) } } }, 2650: (e, t, r) => { "use strict"; r.d(t, { K: () => a, b: () => o }); var n = r(8544); function i() { return "undefined" == typeof document || "complete" === document.readyState } function o(e, t) { if (i()) return e(); (0, n.bP)("load", e, t) } function a(e) { if (i()) return e(); (0, n.iz)("DOMContentLoaded", e) } }, 6797: (e, t, r) => { "use strict"; r.d(t, { EZ: () => u, Qy: () => c, ce: () => o, fP: () => a, gG: () => d, mF: () => s }); var n = r(2053), i = r(2374); const o = { beacon: "bam.nr-data.net", errorBeacon: "bam.nr-data.net" }; function a() { return i._A.NREUM || (i._A.NREUM = {}), void 0 === i._A.newrelic && (i._A.newrelic = i._A.NREUM), i._A.NREUM } function s() { let e = a(); return e.o || (e.o = { ST: i._A.setTimeout, SI: i._A.setImmediate, CT: i._A.clearTimeout, XHR: i._A.XMLHttpRequest, REQ: i._A.Request, EV: i._A.Event, PR: i._A.Promise, MO: i._A.MutationObserver, FETCH: i._A.fetch }), e } function c(e, t, r) { let i = a(); const o = i.initializedAgents || {}, s = o[e] || {}; return Object.keys(s).length || (s.initializedAt = { ms: (0, n.zO)(), date: new Date }), i.initializedAgents = { ...o, [e]: { ...s, [r]: t } }, i } function u(e, t) { a()[e] = t } function d() { return function () { let e = a(); const t = e.info || {}; e.info = { beacon: o.beacon, errorBeacon: o.errorBeacon, ...t } }(), function () { let e = a(); const t = e.init || {}; e.init = { ...t } }(), s(), function () { let e = a(); const t = e.loader_config || {}; e.loader_config = { ...t } }(), a() } }, 6998: (e, t, r) => { "use strict"; r.d(t, { N: () => i, e: () => o }); var n = r(8544); function i(e) { let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1]; return void (0, n.iz)("visibilitychange", (function () { if (t) { if ("hidden" != document.visibilityState) return; e() } e(document.visibilityState) })) } function o() { return "hidden" === document.visibilityState ? -1 : 1 / 0 } }, 6034: (e, t, r) => { "use strict"; r.d(t, { gF: () => o, mY: () => i, t9: () => n, vz: () => s, xS: () => a }); const n = r(2325).D.metrics, i = "sm", o = "cm", a = "storeSupportabilityMetrics", s = "storeEventMetrics" }, 2484: (e, t, r) => { "use strict"; r.d(t, { t: () => n }); const n = r(2325).D.pageViewEvent }, 6382: (e, t, r) => { "use strict"; r.d(t, { t: () => n }); const n = r(2325).D.pageViewTiming }, 1509: (e, t, r) => { "use strict"; r.d(t, { W: () => s }); var n = r(6562), i = r(3752), o = r(2384), a = r(6797); class s { constructor(e, t, r) { this.agentIdentifier = e, this.aggregator = t, this.ee = i.ee.get(e, (0, n.OP)(this.agentIdentifier).isolatedBacklog), this.featureName = r, this.blocked = !1, this.checkConfiguration() } checkConfiguration() { if (!(0, n.lF)(this.agentIdentifier)) { let e = { ...(0, a.gG)().info?.jsAttributes }; try { e = { ...e, ...(0, n.C5)(this.agentIdentifier)?.jsAttributes } } catch (e) { } (0, o.j)(this.agentIdentifier, { ...(0, a.gG)(), info: { ...(0, a.gG)().info, jsAttributes: e } }) } } } }, 2384: (e, t, r) => { "use strict"; r.d(t, { j: () => w }); var n = r(8683), i = r.n(n), o = r(2325), a = r(6562), s = r(9252), c = r(7022), u = r(3752), d = r(2053), f = r(4329), l = r(2650), g = r(2374), v = r(8610), p = r(6034); function h(e) { ["setErrorHandler", "finished", "addToTrace", "inlineHit", "addRelease", "addPageAction", "setCurrentRouteName", "setPageViewName", "setCustomAttribute", "interaction", "noticeError"].forEach((t => { e[t] = function () { for (var r = arguments.length, n = new Array(r), i = 0; i < r; i++)n[i] = arguments[i]; return function (t) { for (var r = arguments.length, n = new Array(r > 1 ? r - 1 : 0), i = 1; i < r; i++)n[i - 1] = arguments[i]; Object.values(e.initializedAgents).forEach((e => { e.exposed && e.api[t] && e.api[t](...n) })) }(t, ...n) } })) } var m = r(6797); const b = { stn: [o.D.sessionTrace], err: [o.D.jserrors, o.D.metrics], ins: [o.D.pageAction], spa: [o.D.spa] }; const y = {}; function w(e) { let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, n = arguments.length > 2 ? arguments[2] : void 0, w = arguments.length > 3 ? arguments[3] : void 0, { init: A, info: E, loader_config: x, runtime: T = { loaderType: n }, exposed: _ = !0 } = t; const D = (0, m.gG)(); let O = {}; return E || (A = D.init, E = D.info, x = D.loader_config, O = D), g.v6 && (E.jsAttributes = { ...E.jsAttributes, isWorker: !0 }), (0, a.CX)(e, E), (0, a.Dg)(e, A || {}), (0, a.GE)(e, x || {}), (0, a.sU)(e, T), function (e, t, n) { n || (0, f.R)(e, "api"), h(t); var m = u.ee.get(e), b = m.get("tracer"), y = "api-", w = y + "ixn-"; function A() { } (0, c.D)(["setErrorHandler", "finished", "addToTrace", "inlineHit", "addRelease"], (function (e, r) { t[r] = x(y, r, !0, "api") })), t.addPageAction = x(y, "addPageAction", !0, o.D.pageAction), t.setCurrentRouteName = x(y, "routeName", !0, o.D.spa), t.setPageViewName = function (t, r) { if ("string" == typeof t) return "/" !== t.charAt(0) && (t = "/" + t), (0, a.OP)(e).customTransaction = (r || "http://custom.transaction") + t, x(y, "setPageViewName", !0, "api")() }, t.setCustomAttribute = function (t, r) { const n = (0, a.C5)(e); return (0, a.CX)(e, { ...n, jsAttributes: { ...n.jsAttributes, [t]: r } }), x(y, "setCustomAttribute", !0, "api")() }, t.interaction = function () { return (new A).get() }; var E = A.prototype = { createTracer: function (e, t) { var r = {}, n = this, i = "function" == typeof t; return (0, s.p)(w + "tracer", [(0, d.zO)(), e, r], n, o.D.spa, m), function () { if (b.emit((i ? "" : "no-") + "fn-start", [(0, d.zO)(), n, i], r), i) try { return t.apply(this, arguments) } catch (e) { throw b.emit("fn-err", [arguments, this, "string" == typeof e ? new Error(e) : e], r), e } finally { b.emit("fn-end", [(0, d.zO)()], r) } } } }; function x(e, t, r, n) { return function () { return (0, s.p)(p.xS, ["API/" + t + "/called"], void 0, o.D.metrics, m), (0, s.p)(e + t, [(0, d.zO)()].concat(i()(arguments)), r ? null : this, n, m), r ? void 0 : this } } function T() { r.e(439).then(r.bind(r, 5692)).then((t => { let { setAPI: r } = t; r(e), (0, f.L)(e, "api") })).catch((() => (0, v.Z)("Downloading runtime APIs failed..."))) } (0, c.D)("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","), (function (e, t) { E[t] = x(w, t, void 0, o.D.spa) })), t.noticeError = function (e, t) { "string" == typeof e && (e = new Error(e)), (0, s.p)(p.xS, ["API/noticeError/called"], void 0, o.D.metrics, m), (0, s.p)("err", [e, (0, d.zO)(), !1, t], void 0, o.D.jserrors, m) }, g.v6 ? T() : (0, l.b)((() => T()), !0) }(e, O, w), (0, m.Qy)(e, D, "api"), (0, m.Qy)(e, _, "exposed"), (0, m.EZ)("activatedFeatures", y), (0, m.EZ)("setToken", (t => function (e, t) { var r = u.ee.get(t); e && "object" == typeof e && ((0, c.D)(e, (function (e, t) { if (!t) return (b[e] || []).forEach((t => { (0, s.p)("block-" + e, [], void 0, t, r) })); y[e] || ((0, s.p)("feat-" + e, [], void 0, b[e], r), y[e] = !0) })), (0, f.L)(t, o.D.pageViewEvent)) }(t, e))), O } }, 909: (e, t, r) => { "use strict"; r.d(t, { Z: () => i, q: () => o }); var n = r(2325); function i(e) { switch (e) { case n.D.ajax: return [n.D.jserrors]; case n.D.sessionTrace: return [n.D.ajax, n.D.pageViewEvent]; case n.D.pageViewTiming: return [n.D.pageViewEvent]; default: return [] } } function o(e) { return e === n.D.jserrors ? [] : ["auto"] } }, 2325: (e, t, r) => { "use strict"; r.d(t, { D: () => n, p: () => i }); const n = { ajax: "ajax", jserrors: "jserrors", metrics: "metrics", pageAction: "page_action", pageViewEvent: "page_view_event", pageViewTiming: "page_view_timing", sessionTrace: "session_trace", spa: "spa" }, i = { [n.pageViewEvent]: 1, [n.pageViewTiming]: 2, [n.metrics]: 3, [n.jserrors]: 4, [n.ajax]: 5, [n.sessionTrace]: 6, [n.pageAction]: 7, [n.spa]: 8 } }, 8683: e => { e.exports = function (e, t, r) { t || (t = 0), void 0 === r && (r = e ? e.length : 0); for (var n = -1, i = r - t || 0, o = Array(i < 0 ? 0 : i); ++n < i;)o[n] = e[t + n]; return o } } }, n = {}; function i(e) { var t = n[e]; if (void 0 !== t) return t.exports; var o = n[e] = { exports: {} }; return r[e](o, o.exports, i), o.exports } i.m = r, i.n = e => { var t = e && e.__esModule ? () => e.default : () => e; return i.d(t, { a: t }), t }, i.d = (e, t) => { for (var r in t) i.o(t, r) && !i.o(e, r) && Object.defineProperty(e, r, { enumerable: !0, get: t[r] }) }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((t, r) => (i.f[r](e, t), t)), [])), i.u = e => (({ 78: "page_action-aggregate", 147: "metrics-aggregate", 193: "session_trace-aggregate", 317: "jserrors-aggregate", 348: "page_view_timing-aggregate", 439: "async-api", 729: "lazy-loader", 786: "page_view_event-aggregate", 873: "spa-aggregate", 898: "ajax-aggregate" }[e] || e) + "." + { 78: "2f41aaf7", 147: "28086cfb", 178: "52056f28", 193: "545db67a", 317: "941c6e17", 348: "a7d9d7be", 439: "737e0ca6", 729: "540ab0d1", 786: "2ae3c96c", 873: "494130b7", 898: "52cc993d" }[e] + "-1227.min.js"), i.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), e = {}, t = "NRBA:", i.l = (r, n, o, a) => { if (e[r]) e[r].push(n); else { var s, c; if (void 0 !== o) for (var u = document.getElementsByTagName("script"), d = 0; d < u.length; d++) { var f = u[d]; if (f.getAttribute("src") == r || f.getAttribute("data-webpack") == t + o) { s = f; break } } s || (c = !0, (s = document.createElement("script")).charset = "utf-8", s.timeout = 120, i.nc && s.setAttribute("nonce", i.nc), s.setAttribute("data-webpack", t + o), s.src = r), e[r] = [n]; var l = (t, n) => { s.onerror = s.onload = null, clearTimeout(g); var i = e[r]; if (delete e[r], s.parentNode && s.parentNode.removeChild(s), i && i.forEach((e => e(n))), t) return t(n) }, g = setTimeout(l.bind(null, void 0, { type: "timeout", target: s }), 12e4); s.onerror = l.bind(null, s.onerror), s.onload = l.bind(null, s.onload), c && document.head.appendChild(s) } }, i.r = e => { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, i.p = "https://js-agent.newrelic.com/", (() => { var e = { 703: 0, 946: 0 }; i.f.j = (t, r) => { var n = i.o(e, t) ? e[t] : void 0; if (0 !== n) if (n) r.push(n[2]); else { var o = new Promise(((r, i) => n = e[t] = [r, i])); r.push(n[2] = o); var a = i.p + i.u(t), s = new Error; i.l(a, (r => { if (i.o(e, t) && (0 !== (n = e[t]) && (e[t] = void 0), n)) { var o = r && ("load" === r.type ? "missing" : r.type), a = r && r.target && r.target.src; s.message = "Loading chunk " + t + " failed.\n(" + o + ": " + a + ")", s.name = "ChunkLoadError", s.type = o, s.request = a, n[1](s) } }), "chunk-" + t, t) } }; var t = (t, r) => { var n, o, [a, s, c] = r, u = 0; if (a.some((t => 0 !== e[t]))) { for (n in s) i.o(s, n) && (i.m[n] = s[n]); if (c) c(i) } for (t && t(r); u < a.length; u++)o = a[u], i.o(e, o) && e[o] && e[o][0](), e[o] = 0 }, r = window.webpackChunkNRBA = window.webpackChunkNRBA || []; r.forEach(t.bind(null, 0)), r.push = t.bind(null, r.push.bind(r)) })(); var o = {}; (() => { "use strict"; i.r(o); var e = i(2325), t = i(6562); const r = Object.values(e.D); function n(e) { const n = {}; return r.forEach((r => { n[r] = function (e, r) { return !1 !== (0, t.Mt)(r, "".concat(e, ".enabled")) }(r, e) })), n } var a = i(2384), s = i(909), c = i(9252), u = i(2053), d = i(8283), f = i(6625), l = i(4329), g = i(1509), v = i(2650), p = i(2374), h = i(8610); class m extends g.W { constructor(e, t, r) { let n = !(arguments.length > 3 && void 0 !== arguments[3]) || arguments[3]; super(e, t, r), this.hasAggregator = !1, this.auto = n, this.abortHandler, n && (0, l.R)(e, r) } importAggregator() { if (this.hasAggregator || !this.auto) return; this.hasAggregator = !0; const e = async () => { try { const { lazyLoader: e } = await i.e(729).then(i.bind(i, 8110)), { Aggregate: t } = await e(this.featureName, "aggregate"); new t(this.agentIdentifier, this.aggregator) } catch (e) { (0, h.Z)("Downloading ".concat(this.featureName, " failed...")), this.abortHandler?.() } }; p.v6 ? e() : (0, v.b)((() => e()), !0) } } var b, y, w, A = i(2484); class E extends m { constructor(e, t) { let r = !(arguments.length > 2 && void 0 !== arguments[2]) || arguments[2]; super(e, t, A.t, r), (0, f.v)(e), (0, d.B)(e, "firstbyte", (0, u.yf)()), (0, v.K)((() => this.measureDomContentLoaded())), (0, v.b)((() => this.measureWindowLoaded()), !0), this.importAggregator() } measureWindowLoaded() { var t = (0, u.zO)(); (0, d.B)(this.agentIdentifier, "onload", t + (0, u.os)()), (0, c.p)("timing", ["load", t], void 0, e.D.pageViewTiming, this.ee) } measureDomContentLoaded() { (0, d.B)(this.agentIdentifier, "domContent", (0, u.zO)() + (0, u.os)()) } } b = E, y = "featureName", w = A.t, (y = function (e) { var t = function (e, t) { if ("object" != typeof e || null === e) return e; var r = e[Symbol.toPrimitive]; if (void 0 !== r) { var n = r.call(e, t || "default"); if ("object" != typeof n) return n; throw new TypeError("@@toPrimitive must return a primitive value.") } return ("string" === t ? String : Number)(e) }(e, "string"); return "symbol" == typeof t ? t : String(t) }(y)) in b ? Object.defineProperty(b, y, { value: w, enumerable: !0, configurable: !0, writable: !0 }) : b[y] = w; var x = i(9557), T = i(7022); class _ extends x.w { constructor(e) { super(e), this.aggregatedData = {} } store(e, t, r, n, i) { var o = this.getBucket(e, t, r, i); return o.metrics = function (e, t) { t || (t = { count: 0 }); return t.count += 1, (0, T.D)(e, (function (e, r) { t[e] = D(r, t[e]) })), t }(n, o.metrics), o } merge(e, t, r, n, i) { var o = this.getBucket(e, t, n, i); if (o.metrics) { var a = o.metrics; a.count += r.count, (0, T.D)(r, (function (e, t) { if ("count" !== e) { var n = a[e], i = r[e]; i && !i.c ? a[e] = D(i.t, n) : a[e] = function (e, t) { if (!t) return e; t.c || (t = O(t.t)); return t.min = Math.min(e.min, t.min), t.max = Math.max(e.max, t.max), t.t += e.t, t.sos += e.sos, t.c += e.c, t }(i, a[e]) } })) } else o.metrics = r } storeMetric(e, t, r, n) { var i = this.getBucket(e, t, r); return i.stats = D(n, i.stats), i } getBucket(e, t, r, n) { this.aggregatedData[e] || (this.aggregatedData[e] = {}); var i = this.aggregatedData[e][t]; return i || (i = this.aggregatedData[e][t] = { params: r || {} }, n && (i.custom = n)), i } get(e, t) { return t ? this.aggregatedData[e] && this.aggregatedData[e][t] : this.aggregatedData[e] } take(e) { for (var t = {}, r = "", n = !1, i = 0; i < e.length; i++)t[r = e[i]] = j(this.aggregatedData[r]), t[r].length && (n = !0), delete this.aggregatedData[r]; return n ? t : null } } function D(e, t) { return null == e ? function (e) { e ? e.c++ : e = { c: 1 }; return e }(t) : t ? (t.c || (t = O(t.t)), t.c += 1, t.t += e, t.sos += e * e, e > t.max && (t.max = e), e < t.min && (t.min = e), t) : { t: e } } function O(e) { return { t: e, min: e, max: e, sos: e * e, c: 1 } } function j(e) { return "object" != typeof e ? [] : (0, T.D)(e, k) } function k(e, t) { return t } var P = i(6797), S = i(5526); var I, C = i(6998), N = i(8544), R = i(6382), M = -1, L = function (e) { addEventListener("pageshow", (function (t) { t.persisted && (M = t.timeStamp, e(t)) }), !0) }, B = function () { return window.performance && performance.getEntriesByType && performance.getEntriesByType("navigation")[0] }, z = function () { var e = B(); return e && e.activationStart || 0 }, V = function (e, t) { var r = B(), n = "navigate"; return M >= 0 ? n = "back-forward-cache" : r && (n = document.prerendering || z() > 0 ? "prerender" : document.wasDiscarded ? "restore" : r.type.replace(/_/g, "-")), { name: e, value: void 0 === t ? -1 : t, rating: "good", delta: 0, entries: [], id: "v3-".concat(Date.now(), "-").concat(Math.floor(8999999999999 * Math.random()) + 1e12), navigationType: n } }, W = function (e, t, r) { try { if (PerformanceObserver.supportedEntryTypes.includes(e)) { var n = new PerformanceObserver((function (e) { Promise.resolve().then((function () { t(e.getEntries()) })) })); return n.observe(Object.assign({ type: e, buffered: !0 }, r || {})), n } } catch (e) { } }, q = function (e, t) { var r = function r(n) { "pagehide" !== n.type && "hidden" !== document.visibilityState || (e(n), t && (removeEventListener("visibilitychange", r, !0), removeEventListener("pagehide", r, !0))) }; addEventListener("visibilitychange", r, !0), addEventListener("pagehide", r, !0) }, Z = function (e, t, r, n) { var i, o; return function (a) { t.value >= 0 && (a || n) && ((o = t.value - (i || 0)) || void 0 === i) && (i = t.value, t.delta = o, t.rating = function (e, t) { return e > t[1] ? "poor" : e > t[0] ? "needs-improvement" : "good" }(t.value, r), e(t)) } }, H = function (e) { document.prerendering ? addEventListener("prerenderingchange", (function () { return e() }), !0) : e() }, F = (new Date, 0), U = 1 / 0, G = 0, X = function (e) { e.forEach((function (e) { e.interactionId && (U = Math.min(U, e.interactionId), G = Math.max(G, e.interactionId), F = G ? (G - U) / 7 + 1 : 0) })) }, Q = function () { return I ? F : performance.interactionCount || 0 }, K = function () { "interactionCount" in performance || I || (I = W("event", X, { type: "event", buffered: !0, durationThreshold: 0 })) }, Y = 0, J = function () { return Q() - Y }, $ = [], ee = {}, te = function (e) { var t = $[$.length - 1], r = ee[e.interactionId]; if (r || $.length < 10 || e.duration > t.latency) { if (r) r.entries.push(e), r.latency = Math.max(r.latency, e.duration); else { var n = { id: e.interactionId, latency: e.duration, entries: [e] }; ee[n.id] = n, $.push(n) } $.sort((function (e, t) { return t.latency - e.latency })), $.splice(10).forEach((function (e) { delete ee[e.id] })) } }, re = i(2545); class ne extends m { constructor(r, n) { var i; let o = !(arguments.length > 2 && void 0 !== arguments[2]) || arguments[2]; if (super(r, n, R.t, o), i = this, p.il) { if (this.pageHiddenTime = (0, C.e)(), this.performanceObserver, this.lcpPerformanceObserver, this.clsPerformanceObserver, this.fiRecorded = !1, "PerformanceObserver" in window && "function" == typeof window.PerformanceObserver) { this.performanceObserver = new PerformanceObserver((function () { return i.perfObserver(...arguments) })); try { this.performanceObserver.observe({ entryTypes: ["paint"] }) } catch (e) { } this.lcpPerformanceObserver = new PerformanceObserver((function () { return i.lcpObserver(...arguments) })); try { this.lcpPerformanceObserver.observe({ entryTypes: ["largest-contentful-paint"] }) } catch (e) { } this.clsPerformanceObserver = new PerformanceObserver((function () { return i.clsObserver(...arguments) })); try { this.clsPerformanceObserver.observe({ type: "layout-shift", buffered: !0 }) } catch (e) { } } this.fiRecorded = !1;["click", "keydown", "mousedown", "pointerdown", "touchstart"].forEach((e => { (0, N.iz)(e, (function () { return i.captureInteraction(...arguments) })) })), function (e, t) { t = t || {}, H((function () { var r = [200, 500]; K(); var n, i = V("INP"), o = function (e) { e.forEach((function (e) { e.interactionId && te(e), "first-input" === e.entryType && !$.some((function (t) { return t.entries.some((function (t) { return e.duration === t.duration && e.startTime === t.startTime })) })) && te(e) })); var t, r = (t = Math.min($.length - 1, Math.floor(J() / 50)), $[t]); r && r.latency !== i.value && (i.value = r.latency, i.entries = r.entries, n()) }, a = W("event", o, { durationThreshold: t.durationThreshold || 40 }); n = Z(e, i, r, t.reportAllChanges), a && (a.observe({ type: "first-input", buffered: !0 }), q((function () { o(a.takeRecords()), i.value < 0 && J() > 0 && (i.value = 0, i.entries = []), n(!0) })), L((function () { $ = [], Y = Q(), i = V("INP"), n = Z(e, i, r, t.reportAllChanges) }))) })) }((t => { let { name: r, value: n, id: i } = t; (0, c.p)("timing", [r.toLowerCase(), n, { metricId: i }], void 0, e.D.pageViewTiming, this.ee) })), !0 === (0, t.Mt)(this.agentIdentifier, "page_view_timing.long_task") && (e => { const t = t => { t.forEach((t => { const r = { name: "LT", value: t.duration, info: { ltFrame: t.name, ltStart: t.startTime, ltCtr: t.attribution[0].containerType } }; "window" !== r.info.ltCtr && Object.assign(r.info, { ltCtrSrc: t.attribution[0].containerSrc, ltCtrId: t.attribution[0].containerId, ltCtrName: t.attribution[0].containerName }), e(r) })) }; let r; try { PerformanceObserver.supportedEntryTypes.includes("longtask") && (r = new PerformanceObserver((e => { Promise.resolve().then((() => { t(e.getEntries()) })) })), r.observe({ type: "longtask", buffered: !0 })) } catch (e) { } r && (0, re.L)((() => { t(r.takeRecords()) }), !0) })((t => { let { name: r, value: n, info: i } = t; (0, c.p)("timing", [r.toLowerCase(), n, i], void 0, e.D.pageViewTiming, this.ee) })), (0, C.N)((() => { this.pageHiddenTime = (0, u.zO)(), (0, c.p)("docHidden", [this.pageHiddenTime], void 0, e.D.pageViewTiming, this.ee) }), !0), (0, N.bP)("pagehide", (() => (0, c.p)("winPagehide", [(0, u.zO)()], void 0, e.D.pageViewTiming, this.ee))), this.importAggregator() } } perfObserver(t, r) { t.getEntries().forEach((t => { "first-paint" === t.name ? (0, c.p)("timing", ["fp", Math.floor(t.startTime)], void 0, e.D.pageViewTiming, this.ee) : "first-contentful-paint" === t.name && (0, c.p)("timing", ["fcp", Math.floor(t.startTime)], void 0, e.D.pageViewTiming, this.ee) })) } lcpObserver(t, r) { var n = t.getEntries(); if (n.length > 0) { var i = n[n.length - 1]; if (this.pageHiddenTime < i.startTime) return; var o = [i], a = this.addConnectionAttributes({}); a && o.push(a), (0, c.p)("lcp", o, void 0, e.D.pageViewTiming, this.ee) } } clsObserver(t) { t.getEntries().forEach((t => { t.hadRecentInput || (0, c.p)("cls", [t], void 0, e.D.pageViewTiming, this.ee) })) } addConnectionAttributes(e) { var t = navigator.connection || navigator.mozConnection || navigator.webkitConnection; if (t) return t.type && (e["net-type"] = t.type), t.effectiveType && (e["net-etype"] = t.effectiveType), t.rtt && (e["net-rtt"] = t.rtt), t.downlink && (e["net-dlink"] = t.downlink), e } captureInteraction(r) { if (r instanceof t.Yu.EV && !this.fiRecorded) { var n = Math.round(r.timeStamp), i = { type: r.type }; this.addConnectionAttributes(i), n <= (0, u.zO)() ? i.fid = (0, u.zO)() - n : n > (0, u.os)() && n <= Date.now() ? (n -= (0, u.os)(), i.fid = (0, u.zO)() - n) : n = (0, u.zO)(), this.fiRecorded = !0, (0, c.p)("timing", ["fi", n, i], void 0, e.D.pageViewTiming, this.ee) } } } !function (e, t, r) { (t = function (e) { var t = function (e, t) { if ("object" != typeof e || null === e) return e; var r = e[Symbol.toPrimitive]; if (void 0 !== r) { var n = r.call(e, t || "default"); if ("object" != typeof n) return n; throw new TypeError("@@toPrimitive must return a primitive value.") } return ("string" === t ? String : Number)(e) }(e, "string"); return "symbol" == typeof t ? t : String(t) }(t)) in e ? Object.defineProperty(e, t, { value: r, enumerable: !0, configurable: !0, writable: !0 }) : e[t] = r }(ne, "featureName", R.t); const ie = { dedicated: Boolean(p._A?.Worker), shared: Boolean(p._A?.SharedWorker), service: Boolean(p._A?.navigator?.serviceWorker) }; let oe, ae, se; var ce = i(6034); class ue extends m { constructor(t, r) { let n = !(arguments.length > 2 && void 0 !== arguments[2]) || arguments[2]; super(t, r, ce.t9, n), function (e) { if (!oe) { if (ie.dedicated) { oe = Worker; try { p._A.Worker = r(oe, "Dedicated") } catch (e) { o(e, "Dedicated") } if (ie.shared) { ae = SharedWorker; try { p._A.SharedWorker = r(ae, "Shared") } catch (e) { o(e, "Shared") } } else n("Shared"); if (ie.service) { se = navigator.serviceWorker.register; try { p._A.navigator.serviceWorker.register = (t = se, function () { for (var e = arguments.length, r = new Array(e), n = 0; n < e; n++)r[n] = arguments[n]; return i("Service", r[1]?.type), t.apply(navigator.serviceWorker, r) }) } catch (e) { o(e, "Service") } } else n("Service"); var t; return } n("All") } function r(e, t) { return "undefined" == typeof Proxy ? e : new Proxy(e, { construct: (e, r) => (i(t, r[1]?.type), new e(...r)) }) } function n(t) { p.v6 || e("Workers/".concat(t, "/Unavailable")) } function i(t, r) { e("Workers/".concat(t, "module" === r ? "/Module" : "/Classic")) } function o(t, r) { e("Workers/".concat(r, "/SM/Unsupported")), (0, h.Z)("NR Agent: Unable to capture ".concat(r, " workers."), t) } }((t => (0, c.p)(ce.xS, [t], void 0, e.D.metrics, this.ee))), this.importAggregator() } } !function (e, t, r) { (t = function (e) { var t = function (e, t) { if ("object" != typeof e || null === e) return e; var r = e[Symbol.toPrimitive]; if (void 0 !== r) { var n = r.call(e, t || "default"); if ("object" != typeof n) return n; throw new TypeError("@@toPrimitive must return a primitive value.") } return ("string" === t ? String : Number)(e) }(e, "string"); return "symbol" == typeof t ? t : String(t) }(t)) in e ? Object.defineProperty(e, t, { value: r, enumerable: !0, configurable: !0, writable: !0 }) : e[t] = r }(ue, "featureName", ce.t9), new class { constructor(e) { let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : (0, S.ky)(16); this.agentIdentifier = t, this.sharedAggregator = new _({ agentIdentifier: this.agentIdentifier }), this.features = {}, this.desiredFeatures = new Set(e.features || []), this.desiredFeatures.add(E), Object.assign(this, (0, a.j)(this.agentIdentifier, e, e.loaderType || "agent")), this.start() } get config() { return { info: (0, t.C5)(this.agentIdentifier), init: (0, t.P_)(this.agentIdentifier), loader_config: (0, t.DL)(this.agentIdentifier), runtime: (0, t.OP)(this.agentIdentifier) } } start() { const t = "features"; try { const r = n(this.agentIdentifier), i = Array.from(this.desiredFeatures); i.sort(((t, r) => e.p[t.featureName] - e.p[r.featureName])), i.forEach((t => { if (r[t.featureName] || t.featureName === e.D.pageViewEvent) { const e = (0, s.Z)(t.featureName), n = e.every((e => r[e])); n || (0, h.Z)("".concat(t.featureName, " is enabled but one or more dependent features has been disabled (").concat(JSON.stringify(e), "). This may cause unintended consequences or missing data...")), this.features[t.featureName] = new t(this.agentIdentifier, this.sharedAggregator) } })), (0, P.Qy)(this.agentIdentifier, this.features, t) } catch (e) { (0, h.Z)("Failed to initialize all enabled instrument classes (agent aborted) -", e); for (const e in this.features) this.features[e].abortHandler?.(); const r = (0, P.fP)(); return delete r.initializedAgents[this.agentIdentifier]?.api, delete r.initializedAgents[this.agentIdentifier]?.[t], delete this.sharedAggregator, r.ee?.abort(), delete r.ee?.get(this.agentIdentifier), !1 } } }({ features: [E, ne, ue], loaderType: "lite" }) })(), window.NRBA = o })();</script>
+
+	<title>Smart Street Light</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<meta name="viewport" content="width=device-width" />
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/app.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css"
+		href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" />
+	<link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+	<div class="navbar">
+		<div class="row">
+			<div class="col-md-2">
+				<div style="padding-left:10px;">
+					<img src="img/charusat.jpg" style="margin-bottom: 0.5rem;" width="100px;" />
+				</div>
+			</div><!--col-->
+
+			<div class="col-md-8" style="text-align:center">
+				<div style="">
+					<h2 style="margin-top:0;font-weight:bold">SMART STREET LIGHT SYSTEM</h2>
+					<h5 style="margin:0;font-weight:bold">DASHBOARD</h5>
+				</div>
+			</div><!--col-->
+
+			<div class="col-md-2" style="height:100px">
+				<div style="padding-left:10px; position:relative; bottom:25px; right:-50px;">
+					<img src="img/logo-removebg-preview.png" width="135px;" />
+				</div>
+
+			</div><!--col-->
+		</div>
+		<div class="row" style="background:#e91e63; margin:0;height: 40px;line-height: 40px;color: #fff !important;">
+
+			<!--<div class="col-md-3" id="divLoggedInAs">
+                </div>-->
+			<div class="col-md-9" style="text-align:center; height:40px;">
+				<ul class="nav nav-pills nav-pills-warning" style="display:inline-block" id="ulMainMenu">
+					<li class="active"><a href="#all" onClick="Update('All'); return false;" class="clickToCall"
+							data-toggle="tab">All</a></li>
+					<li class=""><a href="#Area 1" onClick="Update('Area 1'); return false;" class="clickToCall"
+							data-toggle="tab">Area 1</a></li>
+					<li class=""><a href="#Area 2" onClick="Update('Area 2'); return false;" class="clickToCall"
+							data-toggle="tab">Area 2</a></li>
+					<li class=""><a href="#Area 3" onClick="Update('Area 3'); return false;" class="clickToCall"
+							data-toggle="tab">Area 3</a></li>
+
+					<li class=""><a href="#" onClick="ShowModal('Complaint',$('#divComplaint').html())">Complaint</a>
+					</li>
+					<li class="" id="mapMenu"><a href="#map" onClick="Update('All');" data-toggle="tab"
+							class="clickToCall" data-tag="map">Map</a></li>
+					<li class="" id="liLogin"><a href="#" onClick="ShowModal('Login',$('#divLogin').html())"
+							aria-expanded="false">Login</a></li>
+					<li class="" id="divLoggedInAs"></li>
+					<!-- <li class=""><a href="#pill2" onClick="Update('GIS'); return false;" data-toggle="tab" aria-expanded="false">GIS</a></li> -->
+				</ul>
+			</div>
+			
+			<div class="col-md-3">
+				<div style="text-align: right;padding-right: 20px;">Last Updated: <span id="spnLastUpdated"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<div class="main-panel">
+
+			<div class="content">
+
+				<div class="row">
+
+					<!--left-->
+					<div class="col-md-3" id="divLeft">
+
+						<!--<div style="text-align:center; margin-bottom:20px;">
+                    	<img src="img/eesl.png" width="150px" />
+                    </div>-->
+
+						<div class="card card-stats">
+							<div class="card-header" data-background-color="blue">
+								<i class="material-icons"><img src="img/total-lights.svg"></i>
+							</div>
+							<div class="card-content">
+								<p class="category">Total Lights</p>
+								<h3 class="card-title"><span id="spnTotalLights">1</span></h3>
+							</div>
+						</div>
+
+						<div class="card card-stats">
+							<div class="card-header" data-background-color="orange">
+								<i class="material-icons"><img src="img/bulb.svg"></i>
+							</div>
+							<div class="card-content">
+								<p class="category">Total ON Lights</p>
+								<h3 class="card-title"><span id="spnTotalLightsOn">1</span></h3>
+							</div>
+						</div>
+
+
+						<div class="card card-stats">
+							<div class="card-header" data-background-color="purple">
+								<i class="bi bi-lightbulb-off-fill" style="padding: 10px;"></i>
+							</div>
+							<div class="card-content">
+								<p class="category">Faulty Lights</p>
+								<h3 class="card-title"><span id="spnGlowRate"></span>0</h3>
+							</div>
+						</div>
+
+
+						<div class="card card-stats" id="cardComplaint" style="cursor:pointer;"
+							onclick="ShowModal('Complaint',$('#divComplaint').html())">
+							<div class="card-header" data-background-color="red">
+								<i class="material-icons">edit</i>
+							</div>
+							<div class="card-content" style="height: 95px;">
+								<p class="category"></p>
+								<!-- <p class="category">Complaint</p>-->
+								<h3 class="card-title"><span></span>Complaint</h3>
+							</div>
+						</div>
+
+
+					</div>
+
+					<!--center-->
+					<div class="col-md-6" id="divCenter">
+						
+
+						<!-- Map  -->
+						<div id="divMapContainer" style="">
+							<iframe src="https://www.google.com/maps/d/embed?mid=1MJxFm6igkuIpaueWmeJ7o7dXTHUStgg&ehbc=2E312F" width="700" height="520"></iframe>
+<!--	<div id="map" style="min-height: 500px; width: 100%; position: relative; overflow: hidden;" class="active">
+
+		<div
+			style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
+			<div class="gm-style"
+				style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;">
+				<div><button draggable="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts" type="button"
+						style="background: none transparent; display: block; border: none; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; z-index: 1000002; outline-offset: 3px; right: 0px; bottom: 0px; transform: translateX(100%);"></button>
+				</div>
+				<div tabindex="0" aria-label="Map" aria-roledescription="map" role="region"
+					style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: none;"
+					aria-describedby="8969733D-BEFC-4F39-A76E-285AEA480E97">
+					<div
+						style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; will-change: transform; transform: translate(0px, 0px);">
+						<div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
+							<div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+								<div
+									style="position: absolute; z-index: 989; transform: matrix(1, 0, 0, 1, -172, -22);">
+									<div
+										style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;">
+										<div style="width: 256px; height: 256px;"></div>
+									</div>
+									<div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;">
+										<div style="width: 256px; height: 256px;"></div>
+									</div>
+									<div
+										style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px;">
+										<div style="width: 256px; height: 256px;"></div>
+									</div>
+									<div
+										style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px;">
+										<div style="width: 256px; height: 256px;"></div>
+									</div>
+									<div
+										style="position: absolute; left: 512px; top: -256px; width: 256px; height: 256px;">
+										<div style="width: 256px; height: 256px;"></div>
+									</div>
+									<div
+										style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px;">
+										<div style="width: 256px; height: 256px;"></div>
+									</div>
+									<div
+										style="position: absolute; left: 512px; top: 256px; width: 256px; height: 256px;">
+										<div style="width: 256px; height: 256px;"></div>
+									</div>
+									<div
+										style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px;">
+										<div style="width: 256px; height: 256px;"></div>
+									</div>
+									<div
+										style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px;">
+										<div style="width: 256px; height: 256px;"></div>
+									</div>
+									<div
+										style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px;">
+										<div style="width: 256px; height: 256px;"></div>
+									</div>
+									<div
+										style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;">
+										<div style="width: 256px; height: 256px;"></div>
+									</div>
+									<div
+										style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px;">
+										<div style="width: 256px; height: 256px;"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div>
+						<div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div>
+						<div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;">
+							<div style="position: absolute; left: 0px; top: 0px; z-index: -1;">
+								<div
+									style="position: absolute; z-index: 989; transform: matrix(1, 0, 0, 1, -172, -22);">
+									<div
+										style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 0px;">
+										<canvas draggable="false" width="320" height="320"
+											style="user-select: none; position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"></canvas>
+									</div>
+									<div
+										style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;">
+										<canvas draggable="false" width="320" height="320"
+											style="user-select: none; position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"></canvas>
+									</div>
+									<div
+										style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: -256px;">
+										<canvas draggable="false" width="320" height="320"
+											style="user-select: none; position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"></canvas>
+									</div>
+									<div
+										style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: -256px;">
+										<canvas draggable="false" width="320" height="320"
+											style="user-select: none; position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"></canvas>
+									</div>
+									<div
+										style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: -256px;">
+										<canvas draggable="false" width="320" height="320"
+											style="user-select: none; position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"></canvas>
+									</div>
+									<div
+										style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: 0px;">
+										<canvas draggable="false" width="320" height="320"
+											style="user-select: none; position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"></canvas>
+									</div>
+									<div
+										style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: 256px;">
+									</div>
+									<div
+										style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 256px;">
+										<canvas draggable="false" width="320" height="320"
+											style="user-select: none; position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"></canvas>
+									</div>
+									<div
+										style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 256px;">
+										<canvas draggable="false" width="320" height="320"
+											style="user-select: none; position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"></canvas>
+									</div>
+									<div
+										style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 256px;">
+									</div>
+									<div
+										style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 0px;">
+										<canvas draggable="false" width="320" height="320"
+											style="user-select: none; position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"></canvas>
+									</div>
+									<div
+										style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: -256px;">
+										<canvas draggable="false" width="320" height="320"
+											style="user-select: none; position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+							<div style="position: absolute; z-index: 989; transform: matrix(1, 0, 0, 1, -172, -22);">
+								<div
+									style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+									<img draggable="false" alt="" role="presentation"
+										src="https://www.google.com/maps/d/u/0/embed?mid=1jEzYLMTIpOvC6JRvQH1eztU96p5J12k&ehbc=2E312F&ll=22.601677773624722%2C72.81909770338034&z=18"
+										style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+								</div>
+								<div
+									style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+									<img draggable="false" alt="" role="presentation"
+										src="https://www.google.com/maps/d/u/0/embed?mid=1jEzYLMTIpOvC6JRvQH1eztU96p5J12k&ehbc=2E312F&ll=22.601677773624722%2C72.81909770338034&z=18"
+										style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+								</div>
+								<div
+									style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+									<img draggable="false" alt="" role="presentation"
+										src="https://www.google.com/maps/d/u/0/embed?mid=1jEzYLMTIpOvC6JRvQH1eztU96p5J12k&ehbc=2E312F&ll=22.601677773624722%2C72.81909770338034&z=18"
+										style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+								</div>
+								<div
+									style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+									<img draggable="false" alt="" role="presentation"
+										src="https://www.google.com/maps/d/u/0/embed?mid=16Hir1ff-vmwi8qftW-Q4BiiolFEU7K0&ehbc=2E312F&ll=22.600498389861915%2C72.81865303254843&z=19"
+										style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+								</div>
+								<div
+									style="position: absolute; left: 512px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+									<img draggable="false" alt="" role="presentation"
+										src="https://www.google.com/maps/d/u/0/embed?mid=16Hir1ff-vmwi8qftW-Q4BiiolFEU7K0&ehbc=2E312F&ll=22.600498389861915%2C72.81865303254843&z=19"
+										style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+								</div>
+								<div
+									style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+									<img draggable="false" alt="" role="presentation"
+										src="https://www.google.com/maps/d/u/0/embed?mid=16Hir1ff-vmwi8qftW-Q4BiiolFEU7K0&ehbc=2E312F&ll=22.600498389861915%2C72.81865303254843&z=19"
+										style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+								</div>
+								<div
+									style="position: absolute; left: 512px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+									<img draggable="false" alt="" role="presentation"
+										src="https://www.google.com/maps/d/u/0/embed?mid=1CpxjVi3tzrw7Nw11rUaJnqN2j_32Okc&ehbc=2E312F&ll=22.601024692948144%2C72.81989426566207&z=20"
+										style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+								</div>
+								<div
+									style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+									<img draggable="false" alt="" role="presentation"
+										src="https://www.google.com/maps/d/u/0/embed?mid=1CpxjVi3tzrw7Nw11rUaJnqN2j_32Okc&ehbc=2E312F&ll=22.601024692948144%2C72.81989426566207&z=20"
+										style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+								</div>
+								<div
+									style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+									<img draggable="false" alt="" role="presentation"
+										src="https://www.google.com/maps/d/u/0/embed?mid=1CpxjVi3tzrw7Nw11rUaJnqN2j_32Okc&ehbc=2E312F&ll=22.601024692948144%2C72.81989426566207&z=20"
+										style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+								</div>
+								<div
+									style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+									<img draggable="false" alt="" role="presentation"
+										src="https://www.google.com/maps/d/u/0/viewer?mid=1MJxFm6igkuIpaueWmeJ7o7dXTHUStgg&ll=22.600930649870673%2C72.81885777986193&z=16"
+										style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+								</div>
+								<div
+									style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+									<img draggable="false" alt="" role="presentation"
+										src="https://www.google.com/maps/d/u/0/viewer?mid=1MJxFm6igkuIpaueWmeJ7o7dXTHUStgg&ll=22.600930649870673%2C72.81885777986193&z=16"
+										style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+								</div>
+								<div
+									style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+									<img draggable="false" alt="" role="presentation"
+										src="https://www.google.com/maps/d/u/0/embed?mid=1MJxFm6igkuIpaueWmeJ7o7dXTHUStgg&ehbc=2E312F&ll=22.600930649870673%2C72.81885777986193&z=17"
+										style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;">
+						<div
+							style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; will-change: transform; transform: translate(0px, 0px);">
+							<div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div>
+							<div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div>
+							<div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"><span
+									id="0D3853FC-51E1-4BA1-BAB6-D66BCF12EF93" style="display: none;">To navigate, press
+									the arrow keys.</span></div>
+							<div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div>
+						</div>
+					</div>
+					<div class="LGLeeN-keyboard-shortcuts-view" id="8969733D-BEFC-4F39-A76E-285AEA480E97"
+						style="display: none;">
+						<table>
+							<tbody>
+								<tr>
+									<td style="text-align: right;"><kbd
+											class="VdnQmO-keyboard-shortcuts-view--shortcut-key"
+											aria-label="Left arrow">←</kbd></td>
+									<td aria-label="Move left.">Move left</td>
+								</tr>
+								<tr>
+									<td style="text-align: right;"><kbd
+											class="VdnQmO-keyboard-shortcuts-view--shortcut-key"
+											aria-label="Right arrow">→</kbd></td>
+									<td aria-label="Move right.">Move right</td>
+								</tr>
+								<tr>
+									<td style="text-align: right;"><kbd
+											class="VdnQmO-keyboard-shortcuts-view--shortcut-key"
+											aria-label="Up arrow">↑</kbd></td>
+									<td aria-label="Move up.">Move up</td>
+								</tr>
+								<tr>
+									<td style="text-align: right;"><kbd
+											class="VdnQmO-keyboard-shortcuts-view--shortcut-key"
+											aria-label="Down arrow">↓</kbd></td>
+									<td aria-label="Move down.">Move down</td>
+								</tr>
+								<tr>
+									<td style="text-align: right;"><kbd
+											class="VdnQmO-keyboard-shortcuts-view--shortcut-key">+</kbd></td>
+									<td aria-label="Zoom in.">Zoom in</td>
+								</tr>
+								<tr>
+									<td style="text-align: right;"><kbd
+											class="VdnQmO-keyboard-shortcuts-view--shortcut-key">-</kbd></td>
+									<td aria-label="Zoom out.">Zoom out</td>
+								</tr>
+								<tr>
+									<td style="text-align: right;"><kbd
+											class="VdnQmO-keyboard-shortcuts-view--shortcut-key">Home</kbd></td>
+									<td aria-label="Jump left by 75%.">Jump left by 75%</td>
+								</tr>
+								<tr>
+									<td style="text-align: right;"><kbd
+											class="VdnQmO-keyboard-shortcuts-view--shortcut-key">End</kbd></td>
+									<td aria-label="Jump right by 75%.">Jump right by 75%</td>
+								</tr>
+								<tr>
+									<td style="text-align: right;"><kbd
+											class="VdnQmO-keyboard-shortcuts-view--shortcut-key">Page Up</kbd></td>
+									<td aria-label="Jump up by 75%.">Jump up by 75%</td>
+								</tr>
+								<tr>
+									<td style="text-align: right;"><kbd
+											class="VdnQmO-keyboard-shortcuts-view--shortcut-key">Page Down</kbd></td>
+									<td aria-label="Jump down by 75%.">Jump down by 75%</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div><iframe aria-hidden="true" frameborder="0" tabindex="-1"
+					style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;"></iframe>
+				<div
+					style="pointer-events: none; width: 100%; height: 100%; box-sizing: border-box; position: absolute; z-index: 1000002; opacity: 0; border: 2px solid rgb(26, 115, 232);">
+				</div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div><button draggable="false" aria-label="Toggle fullscreen view" title="Toggle fullscreen view"
+						type="button" aria-pressed="false" class="gm-control-active gm-fullscreen-control"
+						style="background: none rgb(255, 255, 255); border: 0px; margin: 10px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; border-radius: 2px; height: 40px; width: 40px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; overflow: hidden; top: 0px; right: 0px;"><img
+							src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E"
+							alt="" style="height: 18px; width: 18px;"><img
+							src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E"
+							alt="" style="height: 18px; width: 18px;"><img
+							src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E"
+							alt="" style="height: 18px; width: 18px;"></button></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div>
+					<div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false"
+						data-control-width="0" data-control-height="0"
+						style="margin: 10px; user-select: none; position: absolute; display: none; bottom: 26px; left: 0px;">
+						<div class="gmnoprint" data-control-width="40" data-control-height="40"
+							style="display: none; position: absolute;">
+							<div
+								style="background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; width: 40px; height: 40px;">
+								<button draggable="false" aria-label="Rotate map clockwise" title="Rotate map clockwise"
+									type="button" class="gm-control-active"
+									style="background: none; display: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; left: 0px; top: 0px; overflow: hidden; width: 40px; height: 40px;"><img
+										alt=""
+										src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"
+										style="width: 20px; height: 20px;"><img alt=""
+										src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"
+										style="width: 20px; height: 20px;"><img alt=""
+										src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"
+										style="width: 20px; height: 20px;"></button>
+								<div
+									style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); display: none;">
+								</div><button draggable="false" aria-label="Rotate map counterclockwise"
+									title="Rotate map counterclockwise" type="button" class="gm-control-active"
+									style="background: none; display: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; left: 0px; top: 0px; overflow: hidden; width: 40px; height: 40px; transform: scaleX(-1);"><img
+										alt=""
+										src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"
+										style="width: 20px; height: 20px;"><img alt=""
+										src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"
+										style="width: 20px; height: 20px;"><img alt=""
+										src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"
+										style="width: 20px; height: 20px;"></button>
+								<div
+									style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); display: none;">
+								</div><button draggable="false" aria-label="Tilt map" title="Tilt map" type="button"
+									class="gm-tilt gm-control-active"
+									style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; top: 0px; left: 0px; overflow: hidden; width: 40px; height: 40px;"><img
+										alt=""
+										src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E"
+										style="width: 18px;"><img alt=""
+										src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E"
+										style="width: 18px;"><img alt=""
+										src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E"
+										style="width: 18px;"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false"
+						data-control-width="40" data-control-height="113"
+						style="margin: 10px; user-select: none; position: absolute; bottom: 127px; right: 40px;">
+						<div style="position: absolute; left: 20px; top: 0px;"></div>
+						<div class="gmnoprint" data-control-width="40" data-control-height="81"
+							style="position: absolute; left: 0px; top: 32px;">
+							<div draggable="false"
+								style="user-select: none; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 40px; height: 81px;">
+								<button draggable="false" aria-label="Zoom in" title="Zoom in" type="button"
+									class="gm-control-active"
+									style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"><img
+										src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E"
+										alt="" style="height: 18px; width: 18px;"><img
+										src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E"
+										alt="" style="height: 18px; width: 18px;"><img
+										src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E"
+										alt="" style="height: 18px; width: 18px;"><img
+										src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23d1d1d1%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E"
+										alt="" style="height: 18px; width: 18px;"></button>
+								<div
+									style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); top: 0px;">
+								</div><button draggable="false" aria-label="Zoom out" title="Zoom out" type="button"
+									class="gm-control-active"
+									style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"><img
+										src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E"
+										alt="" style="height: 18px; width: 18px;"><img
+										src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E"
+										alt="" style="height: 18px; width: 18px;"><img
+										src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E"
+										alt="" style="height: 18px; width: 18px;"><img
+										src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23d1d1d1%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E"
+										alt="" style="height: 18px; width: 18px;"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div style="margin: 0px 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a
+							target="_blank" rel="noopener" title="Open this area in Google Maps (opens a new window)"
+							aria-label="Open this area in Google Maps (opens a new window)"
+							href="https://maps.google.com/maps?ll=28.6,77.11&amp;z=11&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3"
+							style="display: inline;">
+							<div style="width: 66px; height: 26px;"><img alt="Google"
+									src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2069%2029%22%3E%3Cg%20opacity%3D%22.6%22%20fill%3D%22%23fff%22%20stroke%3D%22%23fff%22%20stroke-width%3D%221.5%22%3E%3Cpath%20d%3D%22M17.4706%207.33616L18.0118%206.79504%2017.4599%206.26493C16.0963%204.95519%2014.2582%203.94522%2011.7008%203.94522c-4.613699999999999%200-8.50262%203.7551699999999997-8.50262%208.395779999999998C3.19818%2016.9817%207.0871%2020.7368%2011.7008%2020.7368%2014.1712%2020.7368%2016.0773%2019.918%2017.574%2018.3689%2019.1435%2016.796%2019.5956%2014.6326%2019.5956%2012.957%2019.5956%2012.4338%2019.5516%2011.9316%2019.4661%2011.5041L19.3455%2010.9012H10.9508V14.4954H15.7809C15.6085%2015.092%2015.3488%2015.524%2015.0318%2015.8415%2014.403%2016.4629%2013.4495%2017.1509%2011.7008%2017.1509%209.04835%2017.1509%206.96482%2015.0197%206.96482%2012.341%206.96482%209.66239%209.04835%207.53119%2011.7008%207.53119%2013.137%207.53119%2014.176%208.09189%2014.9578%208.82348L15.4876%209.31922%2016.0006%208.80619%2017.4706%207.33616z%22/%3E%3Cpath%20d%3D%22M24.8656%2020.7286C27.9546%2020.7286%2030.4692%2018.3094%2030.4692%2015.0594%2030.4692%2011.7913%2027.953%209.39011%2024.8656%209.39011%2021.7783%209.39011%2019.2621%2011.7913%2019.2621%2015.0594c0%203.25%202.514499999999998%205.6692%205.6035%205.6692zM24.8656%2012.8282C25.8796%2012.8282%2026.8422%2013.6652%2026.8422%2015.0594%2026.8422%2016.4399%2025.8769%2017.2905%2024.8656%2017.2905%2023.8557%2017.2905%2022.8891%2016.4331%2022.8891%2015.0594%2022.8891%2013.672%2023.853%2012.8282%2024.8656%2012.8282z%22/%3E%3Cpath%20d%3D%22M35.7511%2017.2905v0H35.7469C34.737%2017.2905%2033.7703%2016.4331%2033.7703%2015.0594%2033.7703%2013.672%2034.7343%2012.8282%2035.7469%2012.8282%2036.7608%2012.8282%2037.7234%2013.6652%2037.7234%2015.0594%2037.7234%2016.4439%2036.7554%2017.2962%2035.7511%2017.2905zM35.7387%2020.7286C38.8277%2020.7286%2041.3422%2018.3094%2041.3422%2015.0594%2041.3422%2011.7913%2038.826%209.39011%2035.7387%209.39011%2032.6513%209.39011%2030.1351%2011.7913%2030.1351%2015.0594%2030.1351%2018.3102%2032.6587%2020.7286%2035.7387%2020.7286z%22/%3E%3Cpath%20d%3D%22M51.953%2010.4357V9.68573H48.3999V9.80826C47.8499%209.54648%2047.1977%209.38187%2046.4808%209.38187%2043.5971%209.38187%2041.0168%2011.8998%2041.0168%2015.0758%2041.0168%2017.2027%2042.1808%2019.0237%2043.8201%2019.9895L43.7543%2020.0168%2041.8737%2020.797%2041.1808%2021.0844%2041.4684%2021.7772C42.0912%2023.2776%2043.746%2025.1469%2046.5219%2025.1469%2047.9324%2025.1469%2049.3089%2024.7324%2050.3359%2023.7376%2051.3691%2022.7367%2051.953%2021.2411%2051.953%2019.2723v-8.8366zm-7.2194%209.9844L44.7334%2020.4196C45.2886%2020.6201%2045.878%2020.7286%2046.4808%2020.7286%2047.1616%2020.7286%2047.7866%2020.5819%2048.3218%2020.3395%2048.2342%2020.7286%2048.0801%2021.0105%2047.8966%2021.2077%2047.6154%2021.5099%2047.1764%2021.7088%2046.5219%2021.7088%2045.61%2021.7088%2045.0018%2021.0612%2044.7336%2020.4201zM46.6697%2012.8282C47.6419%2012.8282%2048.5477%2013.6765%2048.5477%2015.084%2048.5477%2016.4636%2047.6521%2017.2987%2046.6697%2017.2987%2045.6269%2017.2987%2044.6767%2016.4249%2044.6767%2015.084%2044.6767%2013.7086%2045.6362%2012.8282%2046.6697%2012.8282zM55.7387%205.22083v-.75H52.0788V20.4412H55.7387V5.220829999999999z%22/%3E%3Cpath%20d%3D%22M63.9128%2016.0614L63.2945%2015.6492%2062.8766%2016.2637C62.4204%2016.9346%2061.8664%2017.3069%2061.0741%2017.3069%2060.6435%2017.3069%2060.3146%2017.2088%2060.0544%2017.0447%2059.9844%2017.0006%2059.9161%2016.9496%2059.8498%2016.8911L65.5497%2014.5286%2066.2322%2014.2456%2065.9596%2013.5589%2065.7406%2013.0075C65.2878%2011.8%2063.8507%209.39832%2060.8278%209.39832%2057.8445%209.39832%2055.5034%2011.7619%2055.5034%2015.0676%2055.5034%2018.2151%2057.8256%2020.7369%2061.0659%2020.7369%2063.6702%2020.7369%2065.177%2019.1378%2065.7942%2018.2213L66.2152%2017.5963%2065.5882%2017.1783%2063.9128%2016.0614zM61.3461%2012.8511L59.4108%2013.6526C59.7903%2013.0783%2060.4215%2012.7954%2060.9017%2012.7954%2061.067%2012.7954%2061.2153%2012.8161%2061.3461%2012.8511z%22/%3E%3C/g%3E%3Cpath%20d%3D%22M11.7008%2019.9868C7.48776%2019.9868%203.94818%2016.554%203.94818%2012.341%203.94818%208.12803%207.48776%204.69522%2011.7008%204.69522%2014.0331%204.69522%2015.692%205.60681%2016.9403%206.80583L15.4703%208.27586C14.5751%207.43819%2013.3597%206.78119%2011.7008%206.78119%208.62108%206.78119%206.21482%209.26135%206.21482%2012.341%206.21482%2015.4207%208.62108%2017.9009%2011.7008%2017.9009%2013.6964%2017.9009%2014.8297%2017.0961%2015.5606%2016.3734%2016.1601%2015.7738%2016.5461%2014.9197%2016.6939%2013.7454h-4.9931V11.6512h7.0298C18.8045%2012.0207%2018.8456%2012.4724%2018.8456%2012.957%2018.8456%2014.5255%2018.4186%2016.4637%2017.0389%2017.8434%2015.692%2019.2395%2013.9838%2019.9868%2011.7008%2019.9868z%22%20fill%3D%22%234285F4%22/%3E%3Cpath%20d%3D%22M29.7192%2015.0594C29.7192%2017.8927%2027.5429%2019.9786%2024.8656%2019.9786%2022.1884%2019.9786%2020.0121%2017.8927%2020.0121%2015.0594%2020.0121%2012.2096%2022.1884%2010.1401%2024.8656%2010.1401%2027.5429%2010.1401%2029.7192%2012.2096%2029.7192%2015.0594zM27.5922%2015.0594C27.5922%2013.2855%2026.3274%2012.0782%2024.8656%2012.0782S22.1391%2013.2937%2022.1391%2015.0594C22.1391%2016.8086%2023.4038%2018.0405%2024.8656%2018.0405S27.5922%2016.8168%2027.5922%2015.0594z%22%20fill%3D%22%23E94235%22/%3E%3Cpath%20d%3D%22M40.5922%2015.0594C40.5922%2017.8927%2038.4159%2019.9786%2035.7387%2019.9786%2033.0696%2019.9786%2030.8851%2017.8927%2030.8851%2015.0594%2030.8851%2012.2096%2033.0614%2010.1401%2035.7387%2010.1401%2038.4159%2010.1401%2040.5922%2012.2096%2040.5922%2015.0594zM38.4734%2015.0594C38.4734%2013.2855%2037.2087%2012.0782%2035.7469%2012.0782%2034.2851%2012.0782%2033.0203%2013.2937%2033.0203%2015.0594%2033.0203%2016.8086%2034.2851%2018.0405%2035.7469%2018.0405%2037.2087%2018.0487%2038.4734%2016.8168%2038.4734%2015.0594z%22%20fill%3D%22%23FABB05%22/%3E%3Cpath%20d%3D%22M51.203%2010.4357v8.8366C51.203%2022.9105%2049.0595%2024.3969%2046.5219%2024.3969%2044.132%2024.3969%2042.7031%2022.7955%2042.161%2021.4897L44.0417%2020.7095C44.3784%2021.5143%2045.1997%2022.4588%2046.5219%2022.4588%2048.1479%2022.4588%2049.1499%2021.4487%2049.1499%2019.568V18.8617H49.0759C48.5914%2019.4612%2047.6552%2019.9786%2046.4808%2019.9786%2044.0171%2019.9786%2041.7668%2017.8352%2041.7668%2015.0758%2041.7668%2012.3%2044.0253%2010.1319%2046.4808%2010.1319%2047.6552%2010.1319%2048.5914%2010.6575%2049.0759%2011.2323H49.1499V10.4357H51.203zM49.2977%2015.084C49.2977%2013.3512%2048.1397%2012.0782%2046.6697%2012.0782%2045.175%2012.0782%2043.9267%2013.3429%2043.9267%2015.084%2043.9267%2016.8004%2045.175%2018.0487%2046.6697%2018.0487%2048.1397%2018.0487%2049.2977%2016.8004%2049.2977%2015.084z%22%20fill%3D%22%234285F4%22/%3E%3Cpath%20d%3D%22M54.9887%205.22083V19.6912H52.8288V5.220829999999999H54.9887z%22%20fill%3D%22%2334A853%22/%3E%3Cpath%20d%3D%22M63.4968%2016.6854L65.1722%2017.8023C64.6301%2018.6072%2063.3244%2019.9869%2061.0659%2019.9869%2058.2655%2019.9869%2056.2534%2017.827%2056.2534%2015.0676%2056.2534%2012.1439%2058.2901%2010.1483%2060.8278%2010.1483%2063.3818%2010.1483%2064.6301%2012.1768%2065.0408%2013.2773L65.2625%2013.8357%2058.6843%2016.5623C59.1853%2017.5478%2059.9737%2018.0569%2061.0741%2018.0569%2062.1746%2018.0569%2062.9384%2017.5067%2063.4968%2016.6854zM58.3312%2014.9115L62.7331%2013.0884C62.4867%2012.4724%2061.764%2012.0454%2060.9017%2012.0454%2059.8012%2012.0454%2058.2737%2013.0145%2058.3312%2014.9115z%22%20fill%3D%22%23E94235%22/%3E%3C/svg%3E"
+									draggable="false"
+									style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;">
+							</div>
+						</a></div>
+				</div>
+				<div></div>
+				<div>
+					<div style="display: inline-flex; position: absolute; right: 0px; bottom: 0px;">
+						<div class="gmnoprint" style="z-index: 1000001;">
+							<div draggable="false" class="gm-style-cc"
+								style="user-select: none; position: relative; height: 14px; line-height: 14px;">
+								<div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+									<div style="width: 1px;"></div>
+									<div
+										style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
+									</div>
+								</div>
+								<div
+									style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+									<button draggable="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts"
+										type="button"
+										style="background: none; display: inline-block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit; line-height: inherit;">Keyboard
+										shortcuts</button></div>
+							</div>
+						</div>
+						<div class="gmnoprint" style="z-index: 1000001;">
+							<div draggable="false" class="gm-style-cc"
+								style="user-select: none; position: relative; height: 14px; line-height: 14px;">
+								<div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+									<div style="width: 1px;"></div>
+									<div
+										style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
+									</div>
+								</div>
+								<div
+									style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+									<button draggable="false" aria-label="Map Data" title="Map Data" type="button"
+										style="background: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit; line-height: inherit; display: none;">Map
+										Data</button><span style="">Map data ©2023</span></div>
+							</div>
+						</div>
+						<div class="gmnoscreen">
+							<div
+								style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(0, 0, 0); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">
+								Map data ©2023</div>
+						</div><button draggable="false" aria-label="Map Scale: 5 km per 74 pixels"
+							title="Map Scale: 5 km per 74 pixels" type="button" class="gm-style-cc"
+							aria-describedby="144FBC20-61F3-4101-927E-59790ED0034C"
+							style="background: none; display: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; height: 14px; line-height: 14px;">
+							<div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+								<div style="width: 1px;"></div>
+								<div
+									style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
+								</div>
+							</div>
+							<div
+								style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+								<span>5 km&nbsp;</span>
+								<div
+									style="position: relative; display: inline-block; height: 8px; bottom: -1px; width: 78px;">
+									<div style="width: 100%; height: 4px; position: absolute; left: 0px; top: 0px;">
+									</div>
+									<div
+										style="width: 4px; height: 8px; left: 0px; top: 0px; background-color: rgb(255, 255, 255);">
+									</div>
+									<div
+										style="width: 4px; height: 8px; position: absolute; background-color: rgb(255, 255, 255); right: 0px; bottom: 0px;">
+									</div>
+									<div
+										style="position: absolute; background-color: rgb(102, 102, 102); height: 2px; left: 1px; bottom: 1px; right: 1px;">
+									</div>
+									<div
+										style="position: absolute; width: 2px; height: 6px; left: 1px; top: 1px; background-color: rgb(102, 102, 102);">
+									</div>
+									<div
+										style="width: 2px; height: 6px; position: absolute; background-color: rgb(102, 102, 102); bottom: 1px; right: 1px;">
+									</div>
+								</div>
+							</div><span id="144FBC20-61F3-4101-927E-59790ED0034C" style="display: none;">Click to toggle
+								between metric and imperial units</span>
+						</button>
+						<div class="gmnoprint gm-style-cc" draggable="false"
+							style="z-index: 1000001; user-select: none; position: relative; height: 14px; line-height: 14px;">
+							<div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+								<div style="width: 1px;"></div>
+								<div
+									style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
+								</div>
+							</div>
+							<div
+								style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+								<a href="https://www.google.com/intl/en-US_US/help/terms_maps.html" target="_blank"
+									rel="noopener"
+									style="text-decoration: none; cursor: pointer; color: rgb(0, 0, 0);">Terms of
+									Use</a></div>
+						</div>
+						<div draggable="false" class="gm-style-cc"
+							style="user-select: none; position: relative; height: 14px; line-height: 14px; display: none;">
+							<div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+								<div style="width: 1px;"></div>
+								<div
+									style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
+								</div>
+							</div>
+							<div
+								style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+								<a target="_blank" rel="noopener"
+									title="Report errors in the road map or imagery to Google" dir="ltr"
+									href="https://www.google.com/maps/d/u/0/embed?mid=1MJxFm6igkuIpaueWmeJ7o7dXTHUStgg&ehbc=2E312F&ll=22.600930649870673%2C72.81885777986193&z=17"
+									style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); text-decoration: none; position: relative;">Report
+									a map error</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+</div> -->
+						<div class="card" id="divAllLights" style="overflow-x: scroll;">
+							<div class="card-header card-header-icon" data-background-color="orange">
+								<i class="material-icons"><img src="img/bulb.svg"></i>
+							</div>
+							<div class="card-content">
+								<h4 class="card-title">Lights in Charusat University</h4>
+								<table class="table">
+									<thead class="">
+										<tr>
+											<th></th>
+											<th>Area 1</th>
+											<th>Area 2</th>
+											<th>Area 3</th>
+											<th>Total</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>No. of Lights</td>
+											<td><span id="spnLightsCentral"><span
+														class="fa fa-spinner fa-spin"></span></span></td>
+											<td><span id="spnLightsSouth"><span
+														class="fa fa-spinner fa-spin"></span></span></td>
+											<td><span id="spnLightsWest"><span
+														class="fa fa-spinner fa-spin"></span></span></td>
+
+											<td><span id="spnLightsTotal" style="font-weight:400"><span
+														class="fa fa-spinner fa-spin"></span></span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+					</div>
+
+
+					<!--right-->
+					<div class="col-md-3" id="divRight">
+
+						<div class="card card-stats">
+							<!--<div class="card-header" data-background-color="rose">
+                            <i class="material-icons"><img src="img/glow-rate.svg"></i>
+                        </div>-->
+							<div class="card-content">
+								<div class="row">
+									<div class="col-sm-12" data-background-color="rose"
+										style="padding-left:0px;margin:0;">
+										<div class="">
+											<i class="bi bi-lightning-fill"
+												style="font-size: 5rem; margin-left: 5rem;"></i>
+										</div>
+										<div class="">
+											<p class="category"><!--Deemed -->Energy Saving</p>
+											<p class="category">(2022-2023)</p>
+											<h3 class="card-title"><span>54.18</span> %</h3>
+										</div>
+									</div>
+
+									<div class="col-sm-12 dflex" data-background-color="blue"
+										style="padding-left:0px;margin:0;">
+										<div>
+											<i class="bi bi-exclamation-diamond-fill"
+												style="font-size: 5rem; margin-left: 5rem; position: relative; top: 3rem; right: 1.5rem;"></i>
+
+										</div>
+
+										<div>
+											<p class="category">CO2 Emission Saving</p>
+											<h3 class="card-title"><span>87526.8</span></h3>
+											<p class="category">(Ton per Year)</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div><!--right-->
+
+				</div>
+
+
+				<!-- <div id="divMarquee" style="display:none"><marquee>Data Last Updated at <strong>06:00 AM</strong>. &nbsp;&nbsp;&nbsp;&nbsp; Next update is scheduled at <strong>06:00 PM</strong></marquee></div>  -->
+
+			</div><!--content-->
+
+
+
+
+		</div><!--main-panel-->
+	</div><!--wrapper-->
+
+	<div id="divWard" style="display:none">
+		<table class="table tblWard">
+			<thead>
+				<tr>
+					<th>S No.</th>
+					<th>Ward No.</th>
+					<th>Ward Name</th>
+					<th colspan="5" style="text-align:center">Units</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr style="font-weight:bold">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>18 W</td>
+					<td>35 W</td>
+					<td>45 W</td>
+					<td>140 W</td>
+					<td>190 W</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>5 S</td>
+					<td>R.K. Puram</td>
+					<td>2476</td>
+					<td>3626</td>
+					<td>972</td>
+					<td>3629</td>
+					<td>962</td>
+				</tr>
+
+				<tr>
+					<td>2</td>
+					<td>6 S</td>
+					<td>Malviya Nagar</td>
+					<td>2463</td>
+					<td>3634</td>
+					<td>989</td>
+					<td>3612</td>
+					<td>954</td>
+				</tr>
+
+				<tr>
+					<td>3</td>
+					<td>7 S</td>
+					<td>Hauz Khas</td>
+					<td>2423</td>
+					<td>3634</td>
+					<td>967</td>
+					<td>3678</td>
+					<td>926</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div id="divComplaint" style="display:none">
+		<div class="row" style="background-color:white">
+			<div class="col-sm-6">
+				<div class="card card-stats">
+					<div class="card-header" data-background-color="">
+						<i class="material-icons">phone_iphone</i>
+					</div>
+					<div class="card-content">
+						<p class="category">TOLL FREE NUMBER</p>
+						<h3 class="card-title"><span>7990470387</span></h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="card card-stats">
+					<div class="card-header" data-background-color="">
+						<i class="material-icons">language</i>
+					</div>
+					<div class="card-content">
+						<p class="category">ONLINE</p>
+						<h3 class="card-title"><a target="_blank"
+								href="http://support.smartstreetlight.org/">http://help.smartstreetlight.org</a><span></span>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div><!-- row -->
+		<div class="row" style="background-color:white">
+			<div class="col-sm-6">
+				<div class="card card-stats">
+					<div class="card-header" data-background-color="">
+						<i class="material-icons">chat_bubble</i>
+					</div>
+					<div class="card-content">
+						<p class="category">WHATSAPP</p>
+						<h3 class="card-title"><span>9106665675 <br> 9978617902</span></h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="card card-stats">
+					<div class="card-header" data-background-color="">
+						<i class="material-icons">email</i>
+					</div>
+					<div class="card-content">
+						<p class="category">EMAIL</p>
+						<h3 class="card-title"><span><a
+									href="mailto:streetlight@charusat.ac.in">streetlight@charusat.ac.in</a><br>&nbsp;</span>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div><!-- row -->
+	</div><!-- divComplaint-->
+
+	<div id="divLogin" style="display:none">
+		<div style="width:500px; margin:auto" class="divLoginBody">
+			<form onSubmit="Login(); return false;">
+				<div class="input-group">
+					<span class="input-group-addon">
+						<i class="material-icons">face</i>
+					</span>
+
+					<div class="form-group label-floating">
+						<label class="control-label">Login ID</label>
+						<input type="text" class="form-control txtLogin">
+					</div>
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon">
+						<i class="material-icons">lock</i>
+					</span>
+
+					<div class="form-group label-floating">
+						<label class="control-label">Password</label>
+						<input type="password" class="form-control txtPassword">
+					</div>
+				</div>
+				<div style="text-align:center">
+					<div style="color:red; display:none;" class="error">Invalid Login ID or Password</div>
+					<button class="btn btn-rose" type="submit">Login</button>
+				</div>
+			</form>
+		</div>
+	</div><!--divLogin-->
+	<style>
+		#divMarquee {
+			background-color: #e91e63;
+			color: white;
+			font-weight: 400;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+
+		#divCenter td span {
+			font-size: 20px;
+		}
+
+		#divLeft .card,
+		#divRight .card {
+			margin: 15px 0;
+		}
+
+		.main-panel>.content {
+			margin-top: 0px;
+			padding-top: 0px;
+		}
+
+		.nav-pills>li>a {
+			color: #fcfcfc;
+		}
+
+		.nav-pills>li.active a {
+			border-radius: 5px !important;
+			height: 40px;
+		}
+
+		#spnLastUpdated {
+			font-weight: bold;
+		}
+
+		.main-panel {
+			width: 95%;
+			float: none;
+			margin: auto;
+
+		}
+
+		body {
+			overflow-x: hidden;
+		}
+
+		.tblWard th {
+			font-weight: bold !important;
+		}
+
+		.modal-dialog {
+			width: 1000px;
+		}
+
+		.swal2-popup {
+			font-size: 1.5rem !important;
+		}
+	</style>
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/material.min.js" type="text/javascript"></script>
+	<script src="js/main7b30.js?v=4" type="text/javascript"></script>
+	<script src="js/moment.min.js"></script>
+
+
+
+
+	<script type="text/javascript">
+		var centralHtml = westHtml = southHtml = najafgarhHtml = "";
+		var centralTotal = westTotal = southTotal = najafgarhTotal = 0;
+		var ccmsCentralTotal = ccmsWestTotal = ccmsSouthTotal = ccmsNajafgarhTotal = ccmsTotal = 0;
+		var ccmsOn = ccmsOff = connectedLoad = activeLoad = functionality = deemedEnergySaving = 0;
+		var ccmsData = {};
+		var mapLoaded = false, update1, update2;
+
+
+		$(document).ready(function () {
+			FetchWardInfo('Area1', 'lights');
+			FetchWardInfo('Area2', 'lights');
+			FetchWardInfo('Area3', 'lights');
+			FetchWardInfo('total', 'ccms');
+			lastUpdatedDateTime = moment().format('DD MMM YYYY HH:mm:ss');
+			Update();
+			update1 = setInterval(function () {
+				//Update();
+				FetchWardInfo('total', 'ccms');
+			}, 5 * 60 * 1000);
+
+			update2 = setInterval(function () { Update() }, 5000);
+
+
+			$("#map, #divMapContainer").hide();
+
+			$(".clickToCall").click(function () {
+				var menuName = $(this).data('tag');
+
+				if (menuName == "map") {
+					$("#map, #divMapContainer").show();
+					$("#divAllLights, #divAllCcms").hide();
+					if (!mapLoaded) {
+						$("#map").html('<div style="font-size:40px; text-align:center">' + Loader() + '</div>');
+						$.ajax({
+							url: 'js/mapCcms.js',
+							dataType: 'script',
+							cache: true,
+							success: function (data) {
+								mapLoaded = true;
+							}
+						});//ajax					
+					}
+				} if (menuName == "map") {
+					$("#map, #divMapContainer").show();
+					$("#divAllLights, #divAllCcms").hide();
+					if (!mapLoaded) {
+						$("#map").html('<div style="font-size:40px; text-align:center">' + Loader() + '</div>');
+						$.ajax({
+							url: 'js/mapCcms.js',
+							dataType: 'script',
+							cache: true,
+							success: function (data) {
+								mapLoaded = true;
+							}
+						});//ajax					
+					}
+				}else {
+					$("#map, #divMapContainer").hide();
+				}
+			});
+
+		});	//document.ready
+
+
+		function FetchWardInfo(zone, type) {
+			$.ajax({
+				url: 'data/' + type + '/' + zone + '.json',
+				cache: false,
+				dataType: "json",
+				success: function (data) {
+					if (type == 'lights')
+						WardHtml(zone, data);
+					else if (zone == 'total' && type == 'ccms')
+						UpdateCcmsTotalData(data);
+					lastUpdatedDateTime = moment().format('DD MMM YYYY HH:mm:ss');
+				}
+			});
+		}
+
+		function UpdateCcmsTotalData(data) {
+			ccmsData = data;
+
+			ccmsCentralTotal = data.central.total;
+			ccmsWestTotal = data.west.total;
+			ccmsSouthTotal = data.south.total;
+			ccmsNajafgarhTotal = data.najafgarh.total;
+			ccmsTotal = data.total.total;
+
+			UpdateVal('spnCcmsCentral', ccmsCentralTotal);
+			UpdateVal('spnCcmsWest', ccmsWestTotal);
+			UpdateVal('spnCcmsSouth', ccmsSouthTotal);
+			UpdateVal('spnCcmsNajafgarh', ccmsNajafgarhTotal);
+			UpdateVal('spnCcmsTotal', ccmsTotal);
+
+			UpdateVal('spnCcmsCentralFunctionality', CalcFunctionality(data.central.activeLoad, data.central.connectedLoad));
+			UpdateVal('spnCcmsWestFunctionality', CalcFunctionality(data.west.activeLoad, data.west.connectedLoad));
+			UpdateVal('spnCcmsSouthFunctionality', CalcFunctionality(data.south.activeLoad, data.south.connectedLoad));
+			UpdateVal('spnCcmsNajafgarhFunctionality', CalcFunctionality(data.najafgarh.activeLoad, data.najafgarh.connectedLoad));
+
+			Update();
+
+		}
+
+		function CalcFunctionality(activeLoad, connectedLoad) {
+			//connectedLoad=parseFloat(connectedLoad).toFixed(2);
+			//activeLoad=parseFloat(activeLoad).toFixed(2);
+			var functionality = (activeLoad / connectedLoad) * 100;
+			//functionality>100 error correction for corrupt data
+			if (functionality > 100) functionality = 100;
+			functionality = functionality.toFixed(2);
+			//if NaN, set to 0
+			if (isNaN(functionality)) functionality = 0;
+			return functionality;
+		}
+
+		function WardHtml(zone, data) {
+			var zoneLower = zone;
+			var staticLights = {};
+
+			/*Edit for changing 'No. of Lights' in top panel
+			staticLights['central']=63826;
+			staticLights['west']=86345;
+			staticLights['south']=59503;
+			staticLights['najafgarh']=86861;		*/
+
+			//Edit for changing 'No. of Lights' in top panel
+			staticLights['central'] = 71431;
+			staticLights['west'] = 99930;
+			staticLights['south'] = 80927;
+			staticLights['najafgarh'] = 104173;
+
+			var html = '<table class="table tblWard"><thead><tr>';
+			for (i in data["first"])
+				html += '<th>' + data["first"][i] + '</th>';
+			html += '</tr></thead><tbody>';
+
+			for (i in data["data"]) {
+				html += '<tr>';
+				for (j in data["data"][i])
+					html += '<td>' + data["data"][i][j] + '</td>';
+				html += '</tr>';
+			}
+			/*html+='<tr style="font-weight:bold">';
+			for(i in data["last"])
+				html+='<td>'+data["last"][i]+'</td>';
+			html+='</tr>';		*/
+			html += '</tbody></table>';
+			var total = data["last"][data["last"].length - 1];
+			eval(zone + "Html='" + html + "';");
+			eval(zone + 'Total=' + total + ';');
+			zone = zone.charAt(0).toUpperCase() + zone.slice(1);
+			//$("#spnLights"+zone).html(total);
+			$("#spnLights" + zone).html('<a onclick="return false">' + staticLights[zoneLower] + '</a>');
+			if (zone == "Najafgarh") //last zone, can do total
+			{
+				if (!centralTotal || !westTotal || !southTotal || !najafgarhTotal) {
+					//one of the data didn't load
+					setTimeout(function () {
+						WardHtml(zoneLower, data);
+					}, 1000);
+					return;
+				}
+				total = staticLights['central'] + staticLights['west'] + staticLights['south'] + staticLights['najafgarh'];			//total=centralTotal+westTotal+southTotal+najafgarhTotal;
+				$("#spnLightsTotal").html(total);
+				$("#spnTotalLights").html(total);
+				Update('All');
+			}
+		}//WardHtml
+
+		function Update(tab) {
+			tab = tab || false;
+			if (!tab)
+				tab = $("#ulMainMenu li.active a").text();
+
+			var ccmsTab = tab.toLowerCase();
+			/*	if(tab)
+					ccmsTab=tab.toLowerCase();
+				else
+					ccmsTab=$("#ulMainMenu li.active a").text().toLowerCase();*/
+			if (ccmsTab == 'all' || ccmsTab == 'map')
+				ccmsTab = 'total';
+
+
+			if (typeof (ccmsData) != "undefined")
+				var data = ccmsData[ccmsTab];
+
+			/*
+			ccmsOff=data.total.off;
+			ccmsOn=ccmsTotal-ccmsOff;
+			connectedLoad=data.total.connectedLoad;
+			activeLoad=data.total.activeLoad;
+			functionality=(activeLoad/connectedLoad)*100;
+			functionality=functionality.toFixed(2);
+			deemedEnergySaving=0;	
+			*/
+
+			if (!tab || tab == "All" || ccmsTab == "total"/* || tab =="GIS"*/) {
+				var totalLights = parseInt($("#spnLightsTotal").html());
+				var totalCcms = parseInt($("#spnCcmsTotal").html());
+				if (tab == 'All') //Show only if tab='All'
+					$("#divAllLights,#divAllCcms").fadeIn();
+			}
+			else {
+				var totalLights = parseInt($("#spnLights" + tab).html());
+				if (typeof (data) != "undefined")
+					var totalCcms = data.total;
+				$("#divAllLights,#divAllCcms").fadeOut();
+			}
+
+			if (!totalLights) {
+				var totalLights = ccmsOff = ccmsOn = connectedLights = lightsOff = lightsOn = connectedLoad = activeLoad = glowRate = Loader();
+			}
+			else {
+				if (parseInt($("#spnTotalLights").html()) != totalLights)
+					UpdateVal('spnTotalLights', totalLights);
+
+
+
+				if (typeof (data) == "undefined") {
+					setTimeout(function () {
+						Update();
+					}, 1000);
+					return;
+				}
+				var ccmsTotal = data.total;
+				var ccmsOff = data.off;
+				var ccmsOn = ccmsTotal - ccmsOff;
+				var connectedLoad = parseFloat(data.connectedLoad).toFixed(2);
+				var activeLoad = parseFloat(data.activeLoad).toFixed(2);
+				var functionality = CalcFunctionality(activeLoad, connectedLoad);
+				//var functionality=(activeLoad/connectedLoad)*100;
+				//functionality=functionality.toFixed(2);
+
+				totalLightsOn = parseInt((functionality / 100) * totalLights);
+				UpdateVal('spnTotalLightsOn', totalLightsOn);
+
+
+				//var deemedEnergySaving=0;
+
+				/*var ccmsOn=parseInt(rand(connectedCcms*0.9,connectedCcms));
+				var ccmsOff=totalCcms-ccmsOn;
+				var connectedLights=parseInt(rand(totalLights*0.9,totalLights));
+				var lightsOn=parseInt(rand(connectedLights*0.9,connectedLights));
+				var lightsOff=totalLights-lightsOn;					
+				var connectedLoad=parseInt(connectedLights*0.07);
+				var activeLoad=parseInt(lightsOn*0.07);
+				var glowRate=(activeLoad/connectedLoad)*100;
+				if(glowRate>100) glowRate=100;
+				glowRate=glowRate.toFixed(2);*/
+			}
+			if (parseInt($("#spnTotalCcms").html()) != ccmsTotal)
+				UpdateVal('spnTotalCcms', ccmsTotal);
+			UpdateVal('spnCcmsOff', ccmsOff);
+			UpdateVal('spnCcmsOn', ccmsOn);
+			//UpdateVal('spnConnectedLights',connectedLights);
+			//UpdateVal('spnLightsOff',lightsOff);
+			//UpdateVal('spnLightsOn',lightsOn);
+			if ($("#spnConnectedLoad").html() != connectedLoad)
+				UpdateVal('spnConnectedLoad', connectedLoad);
+			UpdateVal('spnActiveLoad', activeLoad);
+			UpdateVal('spnGlowRate', functionality);
+
+			if (typeof (ccmsData.central) != "undefined") {
+
+				var centralFunctionality = CalcFunctionality(ccmsData.central.activeLoad, ccmsData.central.connectedLoad);
+				var westFunctionality = CalcFunctionality(ccmsData.west.activeLoad, ccmsData.west.connectedLoad);
+				var southFunctionality = CalcFunctionality(ccmsData.south.activeLoad, ccmsData.south.connectedLoad);
+				var najafgarhFunctionality = CalcFunctionality(ccmsData.najafgarh.activeLoad, ccmsData.najafgarh.connectedLoad);
+
+				UpdateVal('spnCcmsCentralFunctionality', centralFunctionality);
+				UpdateVal('spnCcmsWestFunctionality', westFunctionality);
+				UpdateVal('spnCcmsSouthFunctionality', southFunctionality);
+				UpdateVal('spnCcmsNajafgarhFunctionality', najafgarhFunctionality);
+
+
+				var LightsCentralOn = CalcLightsOn(centralFunctionality, $("#spnLightsCentral a").text());
+				var LightsWestOn = CalcLightsOn(westFunctionality, $("#spnLightsWest a").text());
+				var LightsSouthOn = CalcLightsOn(southFunctionality, $("#spnLightsSouth a").text());
+				var LightsNajafgarhOn = CalcLightsOn(najafgarhFunctionality, $("#spnLightsNajafgarh a").text());
+				//totalLightsOn=LightsCentralOn+LightsWestOn+LightsSouthOn+LightsNajafgarhOn;
+				UpdateVal('spnLightsCentralOn', LightsCentralOn);
+				UpdateVal('spnLightsWestOn', LightsWestOn);
+				UpdateVal('spnLightsSouthOn', LightsSouthOn);
+				UpdateVal('spnLightsNajafgarhOn', LightsNajafgarhOn);
+				console.log(totalLightsOn);
+				if (typeof (totalLightsOn) != "undefined") {
+					UpdateVal('spnLightsTotalOn', totalLightsOn);
+					UpdateVal('spnTotalLightsOn', totalLightsOn);
+				}
+
+				if (typeof (functionality) != "undefined")
+					UpdateVal('spnCcmsTotalFunctionality', functionality);
+
+
+
+
+			}
+			//UpdateVal('spnDeemedEnergySaving',deemedEnergySaving);		
+
+			//lights off
+
+			if (parseInt(moment().format("HH")) >= 6 && parseInt(moment().format("HH")) < 18) {
+				/*if(!$("#divMarquee").is(':visible')){
+					$("#divMarquee").show();
+					$("#divMarquee").html($("#divMarquee").html()); //refresh contents, to restart marquee
+					$("#spnLastUpdated").html(moment().format('DD MMM YYYY')+" 06:00:00");				
+				}*/
+				//$("#spnCcmsOn").html(0);
+				//$("#spnCcmsOff").html(totalCcms);
+			}
+			else { //lights on
+				//$("#divMarquee").hide();
+				/*if(typeof(data)!="undefined" && typeof(data.lastUpdated)!="undefined")
+					UpdateVal('spnLastUpdated',data.lastUpdated);
+				else*/
+				//if($("#spnLastUpdated").html()!=lastUpdatedDateTime)
+				//UpdateVal('spnLastUpdated',lastUpdatedDateTime);			
+			}
+			if ($("#spnLastUpdated").html() != lastUpdatedDateTime)
+				UpdateVal('spnLastUpdated', lastUpdatedDateTime);
+
+
+		}//update
+
+		function CalcLightsOn(functionality, totalLights) {
+			return parseInt((functionality / 100) * totalLights);
+		}
+
+		function ShowZoneInfo(zone, type) {
+			type = type || "ccms";
+			if (type == "light")
+				ShowModal(zone, window[zone.toLowerCase() + 'Html']);
+			else
+				ShowModal(zone, $("#divWard").html());
+			//var obj=$("#divModal .modal-dialog");
+			//		$(obj).css('margin-top',parseInt(($("body").height()-$(obj).height())/2)+'px');
+
+		}
+
+		function UpdateVal(id, val) {
+			//if($("#"+id).html()==val)
+			//return;
+			$("#" + id).html(val).addClass("animated flash");
+			setTimeout(function () { $("#" + id).removeClass("animated flash"); }, 1000);
+		}
+
+		function rand(min, max) {
+			return Math.floor(Math.random() * (max - min + 1) + min);
+		}
+
+		function Login() {
+			PostAction('login', { "username": $("#divModalBody").find('.txtLogin').val(), "password": $("#divModalBody").find('.txtPassword').val() }, function (data) {
+				if (data == "success") {
+					window.location.reload();
+					/*$("#divLoggedInAs").html('Logged in as '+$("#divModalBody").find('.txtLogin').val());
+					ShowModal("", '<div style="text-align:center; color:#3cb371"><span class="material-icons" style="font-size:50px; display:block;">check_circle</span><h2>Logged in</h2></div>');
+					$("#divModalBody .divLoginBody").find('.error').hide();
+					$("#liLogin").hide();				
+					setTimeout(function(){ $("#divModal").modal('hide'); },1000);*/
+
+				}
+				else {
+					$("#divModalBody .divLoginBody").find('.error').show();
+					$("#divModalBody .divLoginBody").addClass("animated shake");
+					setTimeout(function () { $("#divModalBody .divLoginBody").removeClass("animated shake"); }, 1000);
+				}
+			});
+		}
+
+		function ViewCcmsData() {
+			Swal.fire({
+				title: 'Alert!',
+				text: 'You must login to continue!',
+				icon: 'warning',
+				confirmButtonText: 'Login'
+			}).then((result) => {
+				ShowModal('Login', $('#divLogin').html());
+			});//then
+
+		}
+
+		function DateFilter() {
+			var date = myDate;
+			clearInterval(update1);
+			clearInterval(update2);
+			/*if(typeof(myDate)=="object")
+			{		
+				 swal.fire({
+					title: '',
+					html: '<div class="save_loading"><svg viewBox="0 0 140 140" width="140" height="140"><g class="outline"><path d="m 70 28 a 1 1 0 0 0 0 84 a 1 1 0 0 0 0 -84" stroke="rgba(0,0,0,0.1)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></g><g class="circle"><path d="m 70 28 a 1 1 0 0 0 0 84 a 1 1 0 0 0 0 -84" stroke="#71BBFF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dashoffset="200" stroke-dasharray="300"></path></g></svg></div><div><h4>Loading...</h4></div>',
+					showConfirmButton: false,
+					allowOutsideClick: false
+				});
+			}*/
+			$.ajax({
+				url: "functions/dateFilter.php",
+				type: "post",
+				data: {
+					date: moment(date).format("YYYY-MM-DD"),
+					status: ($("#chkStatusToggle").prop("checked") ? "on" : "off")
+				},
+				success: function (data) {
+					FetchWardInfo('total', 'ccms');
+					swal.close();
+				}
+			});
+		}
+
+		function ToggleStatus() {
+			$("#spnStatusToggle").html(($("#chkStatusToggle").prop('checked') == true ? 'On' : 'Off'));
+			DateFilter();
+		}
+	</script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="../maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/animate.min.css" rel="stylesheet" />
+	<style>
+		.wrapper {
+			height: auto;
+		}
+
+		.main-panel>.content {
+			min-height: auto;
+		}
+
+		#divCenter {
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-image: url(img/map.png);	 
+			min-height: 570px;
+			margin-top: 10px;
+		}
+
+		#divCenter .card {
+			opacity: 0.85;
+		}
+
+		#cardComplaint:hover {
+			background-color: #FFC;
+		}
+
+		#ulMap li a {
+			color: #000;
+		}
+
+		#ulMap li {
+			padding: 0;
+			margin: 0;
+		}
+	</style>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.7.1"></script>
+	<script src="js/bootstrap-datetimepicker.js"></script>
+	<script
+		src="https://www.google.com/maps/d/u/0/embed?mid=1MJxFm6igkuIpaueWmeJ7o7dXTHUStgg&ehbc=2E312F&ll=22.600930649870673%2C72.81885777986193&z=17"></script>
+	<script>
+		var myDate;
+		$(document).ready(function (e) {
+			$("#txtDate").datetimepicker({
+				format: 'DD/MM/YYYY',
+				icons: {
+					time: "fa fa-clock-o",
+					date: "fa fa-calendar",
+					up: "fa fa-chevron-up",
+					down: "fa fa-chevron-down",
+					previous: 'fa fa-chevron-left',
+					next: 'fa fa-chevron-right',
+					today: 'fa fa-screenshot',
+					clear: 'fa fa-trash',
+					close: 'fa fa-remove'
+				},
+			});
+			$('#txtDate').on('dp.change', function (e) {
+				$("#divStatusToggle").show();
+				myDate = e.date;
+				DateFilter();
+			})
+		});
+	</script>
+	<script
+		type="text/javascript">window.NREUM || (NREUM = {}); NREUM.info = { "beacon": "bam.nr-data.net", "licenseKey": "e0e9d47b89", "applicationID": "776036015", "transactionName": "YlZQMEdUW0IFBhFbWFscZxZcGlxfAAAdHEddQw==", "queueTime": 0, "applicationTime": 6, "atts": "ThFTRg9OSEw=", "errorBeacon": "bam.nr-data.net", "agent": "" }</script>
+</body>
+
+</html>
